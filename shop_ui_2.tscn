@@ -1,0 +1,1694 @@
+[gd_scene format=3 uid="uid://0rdrwc1pl4tq"]
+
+[ext_resource type="Texture2D" uid="uid://crpecgjgsvobx" path="res://Assets/Icons/Icon_08.png" id="1_direc"]
+[ext_resource type="Texture2D" uid="uid://djk4vm5it7ii" path="res://Assets/Icons/Disable_07.png" id="2_aydxo"]
+[ext_resource type="Texture2D" uid="uid://bbdqw665yx2n8" path="res://Assets/32_free_medieval_jewerly_icons/amulet_03.png" id="3_e1j5h"]
+[ext_resource type="Texture2D" uid="uid://cqcivgnhp8wfs" path="res://Assets/38_free_fantasy_icons/Weapons/one-handed_sword_03.png" id="4_lg655"]
+[ext_resource type="Texture2D" uid="uid://b7tshiaamjw8" path="res://Assets/38_free_fantasy_icons/Armor/heavy_shield_03.png" id="5_uka6v"]
+[ext_resource type="Texture2D" uid="uid://bidtkihyg8adw" path="res://Assets/32_free_medieval_jewerly_icons/brooch_38.png" id="6_68b56"]
+[ext_resource type="Texture2D" uid="uid://c2kupjd68imh3" path="res://Assets/32_free_medieval_jewerly_icons/ring_155.png" id="7_dd3ex"]
+[ext_resource type="Texture2D" uid="uid://cumwvid80lgvq" path="res://Assets/Warrior_Idle.png" id="8_lbnnx"]
+[ext_resource type="Texture2D" uid="uid://cthnevkc83h7h" path="res://Assets/32_free_fantasy_skill_icons/arcane_combat_01.png" id="9_i2x10"]
+[ext_resource type="Texture2D" uid="uid://djiixd6v0x87x" path="res://Assets/32_free_fantasy_skill_icons/demon_defense_03.png" id="10_8ps5i"]
+[ext_resource type="Texture2D" uid="uid://p15xfxs38jfu" path="res://Assets/32_free_fantasy_skill_icons/elf_combat_10.png" id="11_8yabl"]
+[ext_resource type="Texture2D" uid="uid://b5hbnst0l27y2" path="res://Assets/32_free_fantasy_skill_icons/orc_magic_11.png" id="12_up0y5"]
+[ext_resource type="Texture2D" uid="uid://ku74qr3mitmg" path="res://Assets/Icons/Icon_01.png" id="13_oqkkf"]
+[ext_resource type="Texture2D" uid="uid://csxoxmpqey2pe" path="res://Assets/Icons/Icon_03.png" id="14_sgqdm"]
+[ext_resource type="Texture2D" uid="uid://tbs5hpi85kaa" path="res://Assets/Icons/Icon_04.png" id="15_8xbwr"]
+[ext_resource type="Texture2D" uid="uid://c36uvftpdr6k1" path="res://Assets/Icons/Icon_05.png" id="16_kl7q0"]
+[ext_resource type="Texture2D" uid="uid://cptgahkqxyn76" path="res://Assets/Icons/Icon_06.png" id="17_4qcnx"]
+[ext_resource type="Texture2D" uid="uid://bxr1lmhxvemt6" path="res://Assets/32_free_medieval_alchemy_icons/herb_17.png" id="18_m0juu"]
+[ext_resource type="Texture2D" uid="uid://c71qv8lrl5hk7" path="res://Assets/Icons/Icon_09.png" id="19_nidlm"]
+[ext_resource type="Texture2D" uid="uid://di6o5bmb18kcy" path="res://Assets/Icons/Regular_07.png" id="20_erpcp"]
+
+[sub_resource type="Theme" id="Theme_6sibx"]
+
+[node name="ShopUI2" type="Control" unique_id=223660456]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1464989022]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_6sibx")
+
+[node name="Left" type="PanelContainer" parent="HBoxContainer" unique_id=1310885347]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="BACK" type="Button" parent="HBoxContainer/Left" unique_id=1898538275]
+layout_mode = 2
+size_flags_vertical = 0
+icon = ExtResource("1_direc")
+flat = true
+
+[node name="Buy" type="Button" parent="HBoxContainer/Left" unique_id=339381190]
+layout_mode = 2
+size_flags_vertical = 8
+icon = ExtResource("2_aydxo")
+
+[node name="MiddleLeft" type="PanelContainer" parent="HBoxContainer" unique_id=1500563678]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 5.0
+
+[node name="TabContainer" type="TabContainer" parent="HBoxContainer/MiddleLeft" unique_id=1889188554]
+layout_mode = 2
+size_flags_stretch_ratio = 5.0
+tab_alignment = 1
+current_tab = 0
+
+[node name="Recover" type="ScrollContainer" parent="HBoxContainer/MiddleLeft/TabContainer" unique_id=711301761]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/MiddleLeft/TabContainer/Recover" unique_id=580491863]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Title" type="HBoxContainer" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer" unique_id=1326062684]
+layout_mode = 2
+
+[node name="Item" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Title" unique_id=1464460877]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "Item"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Hold" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Title" unique_id=2005572006]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "Hold"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Description" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Title" unique_id=1698416673]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "Description"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Quantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Title" unique_id=954009344]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "Quantity"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Total" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Title" unique_id=1682791487]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "Total"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Item1" type="HBoxContainer" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer" unique_id=340041214]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item1" unique_id=1757162489]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "100"
+icon = ExtResource("3_e1j5h")
+
+[node name="HoldQuantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item1" unique_id=742510914]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Decription" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item1" unique_id=667723558]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "SP Limit + 100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BuyQuantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item1" unique_id=1593505483]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="-" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item1/BuyQuantity" unique_id=1654647324]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -15.5
+offset_right = 14.0
+offset_bottom = 15.5
+grow_vertical = 2
+text = "-"
+
+[node name="+" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item1/BuyQuantity" unique_id=98719316]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -18.0
+offset_top = -15.5
+offset_bottom = 15.5
+grow_horizontal = 0
+grow_vertical = 2
+text = "+"
+
+[node name="Money" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item1" unique_id=2042365822]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Item2" type="HBoxContainer" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer" unique_id=1948558749]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item2" unique_id=1167217767]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "100"
+icon = ExtResource("3_e1j5h")
+
+[node name="HoldQuantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item2" unique_id=1569546236]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Decription" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item2" unique_id=619185051]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "SP Limit + 100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BuyQuantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item2" unique_id=931622682]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="-" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item2/BuyQuantity" unique_id=1432657224]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -15.5
+offset_right = 14.0
+offset_bottom = 15.5
+grow_vertical = 2
+text = "-"
+
+[node name="+" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item2/BuyQuantity" unique_id=1147119212]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -18.0
+offset_top = -15.5
+offset_bottom = 15.5
+grow_horizontal = 0
+grow_vertical = 2
+text = "+"
+
+[node name="Money" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item2" unique_id=405948049]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Item3" type="HBoxContainer" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer" unique_id=1707817634]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item3" unique_id=1467685870]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "100"
+icon = ExtResource("3_e1j5h")
+
+[node name="HoldQuantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item3" unique_id=523384457]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Decription" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item3" unique_id=1649481303]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "SP Limit + 100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BuyQuantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item3" unique_id=340643544]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="-" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item3/BuyQuantity" unique_id=1428980271]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -15.5
+offset_right = 14.0
+offset_bottom = 15.5
+grow_vertical = 2
+text = "-"
+
+[node name="+" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item3/BuyQuantity" unique_id=1386618153]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -18.0
+offset_top = -15.5
+offset_bottom = 15.5
+grow_horizontal = 0
+grow_vertical = 2
+text = "+"
+
+[node name="Money" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item3" unique_id=1588920341]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Item4" type="HBoxContainer" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer" unique_id=890107323]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item4" unique_id=41527679]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "100"
+icon = ExtResource("3_e1j5h")
+
+[node name="HoldQuantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item4" unique_id=3451259]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Decription" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item4" unique_id=1191803435]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "SP Limit + 100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BuyQuantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item4" unique_id=2007137208]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="-" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item4/BuyQuantity" unique_id=1977359157]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -15.5
+offset_right = 14.0
+offset_bottom = 15.5
+grow_vertical = 2
+text = "-"
+
+[node name="+" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item4/BuyQuantity" unique_id=1457520287]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -18.0
+offset_top = -15.5
+offset_bottom = 15.5
+grow_horizontal = 0
+grow_vertical = 2
+text = "+"
+
+[node name="Money" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item4" unique_id=272173270]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Item5" type="HBoxContainer" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer" unique_id=1938668773]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item5" unique_id=1215309044]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "100"
+icon = ExtResource("3_e1j5h")
+
+[node name="HoldQuantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item5" unique_id=1985869206]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Decription" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item5" unique_id=131734684]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "SP Limit + 100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BuyQuantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item5" unique_id=82742057]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="-" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item5/BuyQuantity" unique_id=693208562]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -15.5
+offset_right = 14.0
+offset_bottom = 15.5
+grow_vertical = 2
+text = "-"
+
+[node name="+" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item5/BuyQuantity" unique_id=2075509980]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -18.0
+offset_top = -15.5
+offset_bottom = 15.5
+grow_horizontal = 0
+grow_vertical = 2
+text = "+"
+
+[node name="Money" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item5" unique_id=1459849257]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Item6" type="HBoxContainer" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer" unique_id=900233663]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item6" unique_id=1204404290]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "100"
+icon = ExtResource("3_e1j5h")
+
+[node name="HoldQuantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item6" unique_id=648624619]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Decription" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item6" unique_id=1196372530]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "SP Limit + 100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BuyQuantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item6" unique_id=197677756]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="-" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item6/BuyQuantity" unique_id=1295528117]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -15.5
+offset_right = 14.0
+offset_bottom = 15.5
+grow_vertical = 2
+text = "-"
+
+[node name="+" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item6/BuyQuantity" unique_id=1895634316]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -18.0
+offset_top = -15.5
+offset_bottom = 15.5
+grow_horizontal = 0
+grow_vertical = 2
+text = "+"
+
+[node name="Money" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item6" unique_id=86677959]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Item7" type="HBoxContainer" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer" unique_id=249353972]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item7" unique_id=1638036951]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "100"
+icon = ExtResource("3_e1j5h")
+
+[node name="HoldQuantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item7" unique_id=1056583985]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Decription" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item7" unique_id=1634760034]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "SP Limit + 100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BuyQuantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item7" unique_id=202290775]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="-" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item7/BuyQuantity" unique_id=494427304]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -15.5
+offset_right = 14.0
+offset_bottom = 15.5
+grow_vertical = 2
+text = "-"
+
+[node name="+" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item7/BuyQuantity" unique_id=739466618]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -18.0
+offset_top = -15.5
+offset_bottom = 15.5
+grow_horizontal = 0
+grow_vertical = 2
+text = "+"
+
+[node name="Money" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item7" unique_id=327523389]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Item8" type="HBoxContainer" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer" unique_id=1189409576]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item8" unique_id=567636927]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "100"
+icon = ExtResource("3_e1j5h")
+
+[node name="HoldQuantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item8" unique_id=1947949445]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Decription" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item8" unique_id=1596405860]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "SP Limit + 100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BuyQuantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item8" unique_id=662573537]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="-" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item8/BuyQuantity" unique_id=1312205715]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -15.5
+offset_right = 14.0
+offset_bottom = 15.5
+grow_vertical = 2
+text = "-"
+
+[node name="+" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item8/BuyQuantity" unique_id=526285427]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -18.0
+offset_top = -15.5
+offset_bottom = 15.5
+grow_horizontal = 0
+grow_vertical = 2
+text = "+"
+
+[node name="Money" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item8" unique_id=728034423]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Item9" type="HBoxContainer" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer" unique_id=2010983205]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item9" unique_id=185995317]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "100"
+icon = ExtResource("3_e1j5h")
+
+[node name="HoldQuantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item9" unique_id=472632582]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Decription" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item9" unique_id=739766838]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "SP Limit + 100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BuyQuantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item9" unique_id=903220215]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="-" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item9/BuyQuantity" unique_id=1764945235]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -15.5
+offset_right = 14.0
+offset_bottom = 15.5
+grow_vertical = 2
+text = "-"
+
+[node name="+" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item9/BuyQuantity" unique_id=2106028992]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -18.0
+offset_top = -15.5
+offset_bottom = 15.5
+grow_horizontal = 0
+grow_vertical = 2
+text = "+"
+
+[node name="Money" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item9" unique_id=1522761026]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Item10" type="HBoxContainer" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer" unique_id=1973412682]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item10" unique_id=1829428380]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "100"
+icon = ExtResource("3_e1j5h")
+
+[node name="HoldQuantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item10" unique_id=2016678698]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Decription" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item10" unique_id=1534926803]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "SP Limit + 100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BuyQuantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item10" unique_id=122986591]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="-" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item10/BuyQuantity" unique_id=1680869764]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -15.5
+offset_right = 14.0
+offset_bottom = 15.5
+grow_vertical = 2
+text = "-"
+
+[node name="+" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item10/BuyQuantity" unique_id=562683932]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -18.0
+offset_top = -15.5
+offset_bottom = 15.5
+grow_horizontal = 0
+grow_vertical = 2
+text = "+"
+
+[node name="Money" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Recover/VBoxContainer/Item10" unique_id=1737732000]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Armor" type="ScrollContainer" parent="HBoxContainer/MiddleLeft/TabContainer" unique_id=179922739]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/MiddleLeft/TabContainer/Armor" unique_id=194530375]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Title" type="HBoxContainer" parent="HBoxContainer/MiddleLeft/TabContainer/Armor/VBoxContainer" unique_id=1771004588]
+layout_mode = 2
+
+[node name="Item" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Armor/VBoxContainer/Title" unique_id=1415738369]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "Item"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Hold" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Armor/VBoxContainer/Title" unique_id=1021100922]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "Hold"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Description" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Armor/VBoxContainer/Title" unique_id=1916663901]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "Description"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Quantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Armor/VBoxContainer/Title" unique_id=1068714061]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "Quantity"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Total" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Armor/VBoxContainer/Title" unique_id=732560039]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "Total"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Item1" type="HBoxContainer" parent="HBoxContainer/MiddleLeft/TabContainer/Armor/VBoxContainer" unique_id=514371807]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Armor/VBoxContainer/Item1" unique_id=1813321152]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "100"
+icon = ExtResource("3_e1j5h")
+
+[node name="-" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Armor/VBoxContainer/Item1/Button" unique_id=1444636343]
+layout_mode = 1
+offset_left = 517.0
+offset_top = 24.0
+offset_right = 543.0
+offset_bottom = 77.0
+text = "-"
+
+[node name="+" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Armor/VBoxContainer/Item1/Button" unique_id=1173765642]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 517.0
+offset_top = -78.0
+offset_right = 543.0
+offset_bottom = -25.0
+grow_vertical = 0
+text = "+"
+
+[node name="HoldQuantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Armor/VBoxContainer/Item1" unique_id=662659278]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Decription" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Armor/VBoxContainer/Item1" unique_id=994051981]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "SP Limit + 100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BuyQuantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Armor/VBoxContainer/Item1" unique_id=271361626]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Money" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Armor/VBoxContainer/Item1" unique_id=2108305619]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Weapon" type="ScrollContainer" parent="HBoxContainer/MiddleLeft/TabContainer" unique_id=221738775]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/MiddleLeft/TabContainer/Weapon" unique_id=1738302325]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Title" type="HBoxContainer" parent="HBoxContainer/MiddleLeft/TabContainer/Weapon/VBoxContainer" unique_id=526014017]
+layout_mode = 2
+
+[node name="Item" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Weapon/VBoxContainer/Title" unique_id=2141645581]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "Item"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Hold" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Weapon/VBoxContainer/Title" unique_id=1872288926]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "Hold"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Description" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Weapon/VBoxContainer/Title" unique_id=493483753]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "Description"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Quantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Weapon/VBoxContainer/Title" unique_id=993952182]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "Quantity"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Total" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Weapon/VBoxContainer/Title" unique_id=245197711]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "Total"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Item1" type="HBoxContainer" parent="HBoxContainer/MiddleLeft/TabContainer/Weapon/VBoxContainer" unique_id=1504029716]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Weapon/VBoxContainer/Item1" unique_id=1045283099]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "100"
+icon = ExtResource("3_e1j5h")
+
+[node name="-" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Weapon/VBoxContainer/Item1/Button" unique_id=1656126422]
+layout_mode = 1
+offset_left = 517.0
+offset_top = 24.0
+offset_right = 543.0
+offset_bottom = 77.0
+text = "-"
+
+[node name="+" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Weapon/VBoxContainer/Item1/Button" unique_id=1749969370]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 517.0
+offset_top = -78.0
+offset_right = 543.0
+offset_bottom = -25.0
+grow_vertical = 0
+text = "+"
+
+[node name="HoldQuantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Weapon/VBoxContainer/Item1" unique_id=1201006623]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Decription" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Weapon/VBoxContainer/Item1" unique_id=96380119]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "SP Limit + 100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BuyQuantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Weapon/VBoxContainer/Item1" unique_id=1266273735]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Money" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Weapon/VBoxContainer/Item1" unique_id=1649378674]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Jewerly" type="ScrollContainer" parent="HBoxContainer/MiddleLeft/TabContainer" unique_id=523947301]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/MiddleLeft/TabContainer/Jewerly" unique_id=751387994]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Title" type="HBoxContainer" parent="HBoxContainer/MiddleLeft/TabContainer/Jewerly/VBoxContainer" unique_id=1373883782]
+layout_mode = 2
+
+[node name="Item" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Jewerly/VBoxContainer/Title" unique_id=1541410617]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "Item"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Hold" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Jewerly/VBoxContainer/Title" unique_id=1051495500]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "Hold"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Description" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Jewerly/VBoxContainer/Title" unique_id=905991228]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "Description"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Quantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Jewerly/VBoxContainer/Title" unique_id=1188660459]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "Quantity"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Total" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Jewerly/VBoxContainer/Title" unique_id=801634160]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "Total"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Item1" type="HBoxContainer" parent="HBoxContainer/MiddleLeft/TabContainer/Jewerly/VBoxContainer" unique_id=1499616741]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Jewerly/VBoxContainer/Item1" unique_id=692377203]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "100"
+icon = ExtResource("3_e1j5h")
+
+[node name="-" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Jewerly/VBoxContainer/Item1/Button" unique_id=1217849462]
+layout_mode = 1
+offset_left = 517.0
+offset_top = 24.0
+offset_right = 543.0
+offset_bottom = 77.0
+text = "-"
+
+[node name="+" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Jewerly/VBoxContainer/Item1/Button" unique_id=342236146]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 517.0
+offset_top = -78.0
+offset_right = 543.0
+offset_bottom = -25.0
+grow_vertical = 0
+text = "+"
+
+[node name="HoldQuantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Jewerly/VBoxContainer/Item1" unique_id=749960252]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Decription" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Jewerly/VBoxContainer/Item1" unique_id=478356863]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "SP Limit + 100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BuyQuantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Jewerly/VBoxContainer/Item1" unique_id=384444148]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Money" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Jewerly/VBoxContainer/Item1" unique_id=135214551]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Skill" type="ScrollContainer" parent="HBoxContainer/MiddleLeft/TabContainer" unique_id=479287045]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/MiddleLeft/TabContainer/Skill" unique_id=732355855]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Title" type="HBoxContainer" parent="HBoxContainer/MiddleLeft/TabContainer/Skill/VBoxContainer" unique_id=11373022]
+layout_mode = 2
+
+[node name="Item" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Skill/VBoxContainer/Title" unique_id=1383134339]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "Item"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Hold" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Skill/VBoxContainer/Title" unique_id=1901169351]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "Hold"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Description" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Skill/VBoxContainer/Title" unique_id=798614611]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "Description"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Quantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Skill/VBoxContainer/Title" unique_id=422891103]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "Quantity"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Total" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Skill/VBoxContainer/Title" unique_id=1079280738]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "Total"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Item1" type="HBoxContainer" parent="HBoxContainer/MiddleLeft/TabContainer/Skill/VBoxContainer" unique_id=753398889]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Skill/VBoxContainer/Item1" unique_id=621582466]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "100"
+icon = ExtResource("3_e1j5h")
+
+[node name="-" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Skill/VBoxContainer/Item1/Button" unique_id=625319114]
+layout_mode = 1
+offset_left = 517.0
+offset_top = 24.0
+offset_right = 543.0
+offset_bottom = 77.0
+text = "-"
+
+[node name="+" type="Button" parent="HBoxContainer/MiddleLeft/TabContainer/Skill/VBoxContainer/Item1/Button" unique_id=546617012]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 517.0
+offset_top = -78.0
+offset_right = 543.0
+offset_bottom = -25.0
+grow_vertical = 0
+text = "+"
+
+[node name="HoldQuantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Skill/VBoxContainer/Item1" unique_id=1366583813]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Decription" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Skill/VBoxContainer/Item1" unique_id=115013193]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "SP Limit + 100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BuyQuantity" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Skill/VBoxContainer/Item1" unique_id=1692132669]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Money" type="Label" parent="HBoxContainer/MiddleLeft/TabContainer/Skill/VBoxContainer/Item1" unique_id=191740538]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MiddleRight" type="PanelContainer" parent="HBoxContainer" unique_id=1005053292]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 4.0
+
+[node name="PlayerInformation" type="VBoxContainer" parent="HBoxContainer/MiddleRight" unique_id=417727692]
+layout_mode = 2
+
+[node name="Player" type="Label" parent="HBoxContainer/MiddleRight/PlayerInformation" unique_id=14344697]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 36
+text = "Player Information"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Equipment&&Skill" type="HBoxContainer" parent="HBoxContainer/MiddleRight/PlayerInformation" unique_id=1728473335]
+layout_mode = 2
+
+[node name="Equip" type="GridContainer" parent="HBoxContainer/MiddleRight/PlayerInformation/Equipment&&Skill" unique_id=2127222164]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+size_flags_stretch_ratio = 3.0
+columns = 3
+
+[node name="Weapon" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/Equipment&&Skill/Equip" unique_id=1775188326]
+layout_mode = 2
+texture = ExtResource("4_lg655")
+
+[node name="VSeparatorUp" type="VSeparator" parent="HBoxContainer/MiddleRight/PlayerInformation/Equipment&&Skill/Equip" unique_id=215017453]
+layout_mode = 2
+
+[node name="Armor" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/Equipment&&Skill/Equip" unique_id=1399395490]
+layout_mode = 2
+texture = ExtResource("5_uka6v")
+
+[node name="Jewerly01" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/Equipment&&Skill/Equip" unique_id=1874002693]
+layout_mode = 2
+texture = ExtResource("6_68b56")
+
+[node name="VSeparatorDown" type="VSeparator" parent="HBoxContainer/MiddleRight/PlayerInformation/Equipment&&Skill/Equip" unique_id=1124124983]
+layout_mode = 2
+
+[node name="Jewerly02" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/Equipment&&Skill/Equip" unique_id=1749903671]
+layout_mode = 2
+texture = ExtResource("7_dd3ex")
+
+[node name="PlayerPhoto" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/Equipment&&Skill" unique_id=1000013860]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+size_flags_stretch_ratio = 4.0
+texture = ExtResource("8_lbnnx")
+
+[node name="Skill" type="GridContainer" parent="HBoxContainer/MiddleRight/PlayerInformation/Equipment&&Skill" unique_id=177014919]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+size_flags_stretch_ratio = 4.0
+columns = 3
+
+[node name="Skill01" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/Equipment&&Skill/Skill" unique_id=1125211141]
+layout_mode = 2
+texture = ExtResource("9_i2x10")
+
+[node name="VSeparatorUp" type="VSeparator" parent="HBoxContainer/MiddleRight/PlayerInformation/Equipment&&Skill/Skill" unique_id=1452802704]
+layout_mode = 2
+
+[node name="Skill02" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/Equipment&&Skill/Skill" unique_id=470356634]
+layout_mode = 2
+texture = ExtResource("10_8ps5i")
+
+[node name="Skill03" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/Equipment&&Skill/Skill" unique_id=1877888234]
+layout_mode = 2
+texture = ExtResource("11_8yabl")
+
+[node name="VSeparatorDown" type="VSeparator" parent="HBoxContainer/MiddleRight/PlayerInformation/Equipment&&Skill/Skill" unique_id=1708562132]
+layout_mode = 2
+
+[node name="Skill04" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/Equipment&&Skill/Skill" unique_id=1517602215]
+layout_mode = 2
+texture = ExtResource("12_up0y5")
+
+[node name="HSeparator" type="HSeparator" parent="HBoxContainer/MiddleRight/PlayerInformation" unique_id=1523086305]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Label" type="Label" parent="HBoxContainer/MiddleRight/PlayerInformation" unique_id=755204493]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Parameter"
+
+[node name="Parameter" type="GridContainer" parent="HBoxContainer/MiddleRight/PlayerInformation" unique_id=1449496123]
+layout_mode = 2
+columns = 3
+
+[node name="HP" type="HBoxContainer" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter" unique_id=2010040566]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter/HP" unique_id=1078401184]
+layout_mode = 2
+texture = ExtResource("13_oqkkf")
+
+[node name="Label" type="Label" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter/HP" unique_id=1192817113]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "MAXHP"
+
+[node name="Label2" type="Label" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter/HP" unique_id=1588518529]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "999"
+
+[node name="Label3" type="Label" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter/HP" unique_id=1717303409]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "+/-"
+
+[node name="Label4" type="Label" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter/HP" unique_id=932577448]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "99"
+
+[node name="VSeparator" type="VSeparator" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter" unique_id=287234732]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SP" type="HBoxContainer" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter" unique_id=1171208808]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter/SP" unique_id=1581052887]
+layout_mode = 2
+texture = ExtResource("13_oqkkf")
+
+[node name="Label" type="Label" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter/SP" unique_id=116131212]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "MAXSP"
+
+[node name="Label2" type="Label" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter/SP" unique_id=760737644]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "999"
+
+[node name="Label3" type="Label" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter/SP" unique_id=965572234]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "+/-"
+
+[node name="Label4" type="Label" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter/SP" unique_id=1721650167]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "99"
+
+[node name="Attack" type="HBoxContainer" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter" unique_id=1916578747]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter/Attack" unique_id=1807506900]
+layout_mode = 2
+texture = ExtResource("14_sgqdm")
+
+[node name="Label" type="Label" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter/Attack" unique_id=2017936599]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "ATTACK"
+
+[node name="Label2" type="Label" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter/Attack" unique_id=1977123808]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "999"
+
+[node name="Label3" type="Label" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter/Attack" unique_id=1376321028]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "+/-"
+
+[node name="Label4" type="Label" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter/Attack" unique_id=842445543]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "99"
+
+[node name="VSeparator2" type="VSeparator" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter" unique_id=2084851697]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Guard" type="HBoxContainer" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter" unique_id=1196300373]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter/Guard" unique_id=2111826472]
+layout_mode = 2
+texture = ExtResource("15_8xbwr")
+
+[node name="Label" type="Label" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter/Guard" unique_id=870995257]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "DEFANCE"
+
+[node name="Label2" type="Label" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter/Guard" unique_id=1259548650]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "999"
+
+[node name="Label3" type="Label" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter/Guard" unique_id=1344021733]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "+/-"
+
+[node name="Label4" type="Label" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter/Guard" unique_id=900775413]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "99"
+
+[node name="HitRatio" type="HBoxContainer" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter" unique_id=1242337788]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter/HitRatio" unique_id=1836212022]
+layout_mode = 2
+texture = ExtResource("16_kl7q0")
+
+[node name="Label" type="Label" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter/HitRatio" unique_id=1327711798]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "HITRATIO"
+
+[node name="Label2" type="Label" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter/HitRatio" unique_id=260256130]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "999"
+
+[node name="Label3" type="Label" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter/HitRatio" unique_id=1881696421]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "+/-"
+
+[node name="Label4" type="Label" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter/HitRatio" unique_id=1710555963]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "99"
+
+[node name="VSeparator3" type="VSeparator" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter" unique_id=221215842]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Speed" type="HBoxContainer" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter" unique_id=1238444077]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter/Speed" unique_id=1291739086]
+layout_mode = 2
+texture = ExtResource("17_4qcnx")
+
+[node name="Label" type="Label" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter/Speed" unique_id=1247199951]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "SPEED"
+
+[node name="Label2" type="Label" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter/Speed" unique_id=1192121741]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "999"
+
+[node name="Label3" type="Label" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter/Speed" unique_id=1862525782]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "+/-"
+
+[node name="Label4" type="Label" parent="HBoxContainer/MiddleRight/PlayerInformation/Parameter/Speed" unique_id=1908623956]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "99"
+
+[node name="HSeparator2" type="HSeparator" parent="HBoxContainer/MiddleRight/PlayerInformation" unique_id=958979662]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Package" type="Label" parent="HBoxContainer/MiddleRight/PlayerInformation" unique_id=918030266]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Package"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="HBoxContainer/MiddleRight/PlayerInformation" unique_id=418346057]
+layout_mode = 2
+size_flags_vertical = 3
+columns = 7
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/GridContainer" unique_id=1348454627]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("18_m0juu")
+
+[node name="TextureRect2" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/GridContainer" unique_id=713972821]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("18_m0juu")
+
+[node name="TextureRect3" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/GridContainer" unique_id=1712337906]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("18_m0juu")
+
+[node name="TextureRect4" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/GridContainer" unique_id=675278196]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("18_m0juu")
+
+[node name="TextureRect5" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/GridContainer" unique_id=1290490135]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("18_m0juu")
+
+[node name="TextureRect6" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/GridContainer" unique_id=2046960627]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("18_m0juu")
+
+[node name="TextureRect7" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/GridContainer" unique_id=1898498992]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("18_m0juu")
+
+[node name="TextureRect8" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/GridContainer" unique_id=1482566754]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("18_m0juu")
+
+[node name="TextureRect9" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/GridContainer" unique_id=169699063]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("18_m0juu")
+
+[node name="TextureRect10" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/GridContainer" unique_id=191047600]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("18_m0juu")
+
+[node name="TextureRect11" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/GridContainer" unique_id=1278891099]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("18_m0juu")
+
+[node name="TextureRect12" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/GridContainer" unique_id=1630396257]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("18_m0juu")
+
+[node name="TextureRect13" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/GridContainer" unique_id=911272335]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("18_m0juu")
+
+[node name="TextureRect14" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/GridContainer" unique_id=2064998197]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("18_m0juu")
+
+[node name="TextureRect15" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/GridContainer" unique_id=624255469]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("18_m0juu")
+
+[node name="TextureRect16" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/GridContainer" unique_id=211193321]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("18_m0juu")
+
+[node name="TextureRect17" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/GridContainer" unique_id=1321792847]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("18_m0juu")
+
+[node name="TextureRect18" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/GridContainer" unique_id=1246367021]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("18_m0juu")
+
+[node name="TextureRect19" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/GridContainer" unique_id=642054415]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("18_m0juu")
+
+[node name="TextureRect20" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/GridContainer" unique_id=386236523]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("18_m0juu")
+
+[node name="TextureRect21" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/GridContainer" unique_id=46610597]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("18_m0juu")
+
+[node name="TextureRect22" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/GridContainer" unique_id=1467690587]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("18_m0juu")
+
+[node name="TextureRect23" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/GridContainer" unique_id=1799203607]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("18_m0juu")
+
+[node name="TextureRect24" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/GridContainer" unique_id=1584845702]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("18_m0juu")
+
+[node name="TextureRect25" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/GridContainer" unique_id=975745613]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("18_m0juu")
+
+[node name="TextureRect26" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/GridContainer" unique_id=1828101348]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("18_m0juu")
+
+[node name="TextureRect27" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/GridContainer" unique_id=2056221957]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("18_m0juu")
+
+[node name="TextureRect28" type="TextureRect" parent="HBoxContainer/MiddleRight/PlayerInformation/GridContainer" unique_id=724120150]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("18_m0juu")
+
+[node name="Right" type="PanelContainer" parent="HBoxContainer" unique_id=2083151647]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Exit" type="Button" parent="HBoxContainer/Right" unique_id=22103457]
+layout_mode = 2
+size_flags_vertical = 0
+icon = ExtResource("19_nidlm")
+
+[node name="Sell" type="Button" parent="HBoxContainer/Right" unique_id=97655299]
+layout_mode = 2
+size_flags_vertical = 8
+icon = ExtResource("20_erpcp")
