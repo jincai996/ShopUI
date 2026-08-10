@@ -1,0 +1,12 @@
+~ start
+Nathan: [[Hi|Hello|Howdy]], this is some dialogue.
+Nathan: Here are some choices.
+- BUY
+	do show_shop_ui()
+	Nathan: Welcome to the shop!
+- SELL
+	Nathan: You picked the second one.
+- EXIT => END
+	Nathan: Bye.
+Nathan: For more information see the online documentation.
+=> END

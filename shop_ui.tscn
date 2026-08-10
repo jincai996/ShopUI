@@ -1,31 +1,35 @@
 [gd_scene format=3 uid="uid://d1qnplbkct6dx"]
 
 [ext_resource type="Texture2D" uid="uid://csxoxmpqey2pe" path="res://Assets/Icons/Icon_03.png" id="2_du886"]
-[ext_resource type="Texture2D" uid="uid://c71qv8lrl5hk7" path="res://Assets/Icons/Icon_09.png" id="2_dxujh"]
-[ext_resource type="Texture2D" uid="uid://djeerayucmf4x" path="res://Assets/Icons/Icon_07.png" id="2_lwavh"]
 [ext_resource type="Texture2D" uid="uid://cqcivgnhp8wfs" path="res://Assets/38_free_fantasy_icons/Weapons/one-handed_sword_03.png" id="5_06ldd"]
 [ext_resource type="Texture2D" uid="uid://bidtkihyg8adw" path="res://Assets/32_free_medieval_jewerly_icons/brooch_38.png" id="6_6iqus"]
 [ext_resource type="Texture2D" uid="uid://b7tshiaamjw8" path="res://Assets/38_free_fantasy_icons/Armor/heavy_shield_03.png" id="6_06ldd"]
-[ext_resource type="Texture2D" uid="uid://cumwvid80lgvq" path="res://Assets/Warrior_Idle.png" id="7_ok5pp"]
 [ext_resource type="Texture2D" uid="uid://c2kupjd68imh3" path="res://Assets/32_free_medieval_jewerly_icons/ring_155.png" id="7_pyoh4"]
-[ext_resource type="Texture2D" uid="uid://c36uvftpdr6k1" path="res://Assets/Icons/Icon_05.png" id="10_ia46t"]
 [ext_resource type="Texture2D" uid="uid://djiixd6v0x87x" path="res://Assets/32_free_fantasy_skill_icons/demon_defense_03.png" id="10_pyoh4"]
 [ext_resource type="Texture2D" uid="uid://cptgahkqxyn76" path="res://Assets/Icons/Icon_06.png" id="11_8l6mh"]
 [ext_resource type="Texture2D" uid="uid://cc8ohdj0xup48" path="res://Assets/32_free_medieval_alchemy_icons/potion_01.png" id="11_62rop"]
 [ext_resource type="Texture2D" uid="uid://p15xfxs38jfu" path="res://Assets/32_free_fantasy_skill_icons/elf_combat_10.png" id="11_awwff"]
+[ext_resource type="Texture2D" uid="uid://yetwajc5ivju" path="res://Assets/Human Avatars/Avatars_01.png" id="11_lwavh"]
 [ext_resource type="Texture2D" uid="uid://b5hbnst0l27y2" path="res://Assets/32_free_fantasy_skill_icons/orc_magic_11.png" id="12_62rop"]
-[ext_resource type="Texture2D" uid="uid://dof6csvpci84t" path="res://Assets/32_free_medieval_alchemy_icons/potion_09.png" id="12_lwavh"]
 [ext_resource type="Texture2D" uid="uid://cthnevkc83h7h" path="res://Assets/32_free_fantasy_skill_icons/arcane_combat_01.png" id="12_m5ysm"]
-[ext_resource type="Texture2D" uid="uid://ku74qr3mitmg" path="res://Assets/Icons/Icon_01.png" id="13_6iqus"]
-[ext_resource type="Texture2D" uid="uid://chksucyywn676" path="res://Assets/32_free_medieval_alchemy_icons/potion_17.png" id="13_ckwsy"]
-[ext_resource type="Texture2D" uid="uid://bpalnosour40a" path="res://Assets/32_free_medieval_alchemy_icons/potion_25.png" id="14_62rop"]
 [ext_resource type="Texture2D" uid="uid://bbdqw665yx2n8" path="res://Assets/32_free_medieval_jewerly_icons/amulet_03.png" id="15_62rop"]
 [ext_resource type="Texture2D" uid="uid://tbs5hpi85kaa" path="res://Assets/Icons/Icon_04.png" id="15_awwff"]
+[ext_resource type="Texture2D" uid="uid://c36uvftpdr6k1" path="res://Assets/Icons/Icon_05.png" id="17_lwavh"]
+[ext_resource type="Texture2D" uid="uid://bgfnub8oihpwv" path="res://Assets/Icons/Icon_11.png" id="19_ckwsy"]
+[ext_resource type="Texture2D" uid="uid://b7w2ey3hid1en" path="res://Assets/Icons/Icon_12.png" id="20_ckwsy"]
 
 [sub_resource type="Theme" id="Theme_6sibx"]
 
 [node name="ShopUI" type="Control" unique_id=223660456]
 layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1034800679]
+layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -48,6 +52,7 @@ size_flags_horizontal = 3
 [node name="TabContainer" type="TabContainer" parent="HBoxContainer/Buy" unique_id=1889188554]
 layout_mode = 2
 size_flags_stretch_ratio = 5.0
+theme_override_font_sizes/font_size = 24
 tab_alignment = 1
 current_tab = 0
 
@@ -66,7 +71,7 @@ layout_mode = 2
 [node name="Item" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Title" unique_id=1464460877]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
+theme_override_font_sizes/font_size = 32
 text = "Item"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -74,7 +79,7 @@ vertical_alignment = 1
 [node name="Hold" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Title" unique_id=2005572006]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
+theme_override_font_sizes/font_size = 32
 text = "Hold"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -82,7 +87,7 @@ vertical_alignment = 1
 [node name="Description" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Title" unique_id=1698416673]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
+theme_override_font_sizes/font_size = 32
 text = "Description"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -90,33 +95,30 @@ vertical_alignment = 1
 [node name="Quantity" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Title" unique_id=954009344]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
+theme_override_font_sizes/font_size = 32
 text = "Quantity"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Total" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Title" unique_id=1682791487]
+[node name="Price" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Title" unique_id=1682791487]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
-text = "Total"
+theme_override_font_sizes/font_size = 32
+text = "Price"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Item1" type="HBoxContainer" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer" unique_id=340041214]
 layout_mode = 2
 
-[node name="Button" type="Button" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item1" unique_id=1757162489]
+[node name="Item" type="Button" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item1" unique_id=1227720269]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
-text = "100"
-icon = ExtResource("11_62rop")
+icon = ExtResource("15_awwff")
 
-[node name="HoldQuantity" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item1" unique_id=742510914]
+[node name="Hold" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item1" unique_id=742510914]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
+theme_override_font_sizes/font_size = 24
 text = "99"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -124,20 +126,20 @@ vertical_alignment = 1
 [node name="Decription" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item1" unique_id=667723558]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
+theme_override_font_sizes/font_size = 24
 text = "HP+10"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="BuyQuantity" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item1" unique_id=1593505483]
+[node name="Quantity" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item1" unique_id=1593505483]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
+theme_override_font_sizes/font_size = 24
 text = "99"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="-" type="Button" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item1/BuyQuantity" unique_id=1654647324]
+[node name="-" type="Button" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item1/Quantity" unique_id=1654647324]
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
@@ -148,7 +150,7 @@ offset_bottom = 15.5
 grow_vertical = 2
 text = "-"
 
-[node name="+" type="Button" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item1/BuyQuantity" unique_id=98719316]
+[node name="+" type="Button" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item1/Quantity" unique_id=98719316]
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
@@ -162,49 +164,113 @@ grow_horizontal = 0
 grow_vertical = 2
 text = "+"
 
-[node name="Money" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item1" unique_id=2042365822]
+[node name="Price" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item1" unique_id=2042365822]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
+theme_override_font_sizes/font_size = 24
+text = "999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer" unique_id=1578556958]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 10
+theme_override_font_sizes/font_size = 24
 text = "9999"
+icon = ExtResource("2_du886")
+
+[node name="Potion2" type="ScrollContainer" parent="HBoxContainer/Buy/TabContainer" unique_id=2027546120]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Buy/TabContainer/Potion2" unique_id=1020517201]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Title" type="HBoxContainer" parent="HBoxContainer/Buy/TabContainer/Potion2/VBoxContainer" unique_id=775172645]
+layout_mode = 2
+
+[node name="Item" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion2/VBoxContainer/Title" unique_id=894162381]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 32
+text = "Item"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Item2" type="HBoxContainer" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer" unique_id=1948558749]
-layout_mode = 2
-
-[node name="Button" type="Button" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item2" unique_id=1167217767]
+[node name="Hold" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion2/VBoxContainer/Title" unique_id=1679149477]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
-text = "100"
-icon = ExtResource("12_lwavh")
+theme_override_font_sizes/font_size = 32
+text = "Hold"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="HoldQuantity" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item2" unique_id=1569546236]
+[node name="Description" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion2/VBoxContainer/Title" unique_id=1187574865]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
+theme_override_font_sizes/font_size = 32
+text = "Description"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Quantity" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion2/VBoxContainer/Title" unique_id=696722817]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 32
+text = "Quantity"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Price" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion2/VBoxContainer/Title" unique_id=613392366]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 32
+text = "Price"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Item2" type="Button" parent="HBoxContainer/Buy/TabContainer/Potion2/VBoxContainer" unique_id=1108854971]
+layout_mode = 2
+size_flags_vertical = 4
+icon = ExtResource("15_awwff")
+
+[node name="Item1" type="HBoxContainer" parent="HBoxContainer/Buy/TabContainer/Potion2/VBoxContainer/Item2" unique_id=842813994]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Hold" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion2/VBoxContainer/Item2/Item1" unique_id=915947584]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 24
 text = "99"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Decription" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item2" unique_id=619185051]
+[node name="Decription" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion2/VBoxContainer/Item2/Item1" unique_id=261258707]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
-text = "SP+10"
+theme_override_font_sizes/font_size = 24
+text = "HP+10"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="BuyQuantity" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item2" unique_id=931622682]
+[node name="Quantity" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion2/VBoxContainer/Item2/Item1" unique_id=400881477]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
+theme_override_font_sizes/font_size = 24
 text = "99"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="-" type="Button" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item2/BuyQuantity" unique_id=1432657224]
+[node name="-" type="Button" parent="HBoxContainer/Buy/TabContainer/Potion2/VBoxContainer/Item2/Item1/Quantity" unique_id=1193934561]
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
@@ -215,7 +281,7 @@ offset_bottom = 15.5
 grow_vertical = 2
 text = "-"
 
-[node name="+" type="Button" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item2/BuyQuantity" unique_id=1147119212]
+[node name="+" type="Button" parent="HBoxContainer/Buy/TabContainer/Potion2/VBoxContainer/Item2/Item1/Quantity" unique_id=149752579]
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
@@ -229,49 +295,52 @@ grow_horizontal = 0
 grow_vertical = 2
 text = "+"
 
-[node name="Money" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item2" unique_id=405948049]
+[node name="Price" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion2/VBoxContainer/Item2/Item1" unique_id=686613430]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
-text = "9999"
+theme_override_font_sizes/font_size = 24
+text = "999"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Item3" type="HBoxContainer" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer" unique_id=1707817634]
+[node name="Item3" type="Button" parent="HBoxContainer/Buy/TabContainer/Potion2/VBoxContainer" unique_id=1930501810]
 layout_mode = 2
+size_flags_vertical = 4
+icon = ExtResource("15_awwff")
 
-[node name="Button" type="Button" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item3" unique_id=1467685870]
+[node name="Item1" type="HBoxContainer" parent="HBoxContainer/Buy/TabContainer/Potion2/VBoxContainer/Item3" unique_id=1412365891]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Hold" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion2/VBoxContainer/Item3/Item1" unique_id=1130840046]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
-text = "100"
-icon = ExtResource("13_ckwsy")
-
-[node name="HoldQuantity" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item3" unique_id=523384457]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
+theme_override_font_sizes/font_size = 24
 text = "99"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Decription" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item3" unique_id=1649481303]
+[node name="Decription" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion2/VBoxContainer/Item3/Item1" unique_id=1199970706]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
-text = "HP+50"
+theme_override_font_sizes/font_size = 24
+text = "HP+10"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="BuyQuantity" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item3" unique_id=340643544]
+[node name="Quantity" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion2/VBoxContainer/Item3/Item1" unique_id=352681413]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
+theme_override_font_sizes/font_size = 24
 text = "99"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="-" type="Button" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item3/BuyQuantity" unique_id=1428980271]
+[node name="-" type="Button" parent="HBoxContainer/Buy/TabContainer/Potion2/VBoxContainer/Item3/Item1/Quantity" unique_id=826510456]
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
@@ -282,7 +351,7 @@ offset_bottom = 15.5
 grow_vertical = 2
 text = "-"
 
-[node name="+" type="Button" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item3/BuyQuantity" unique_id=1386618153]
+[node name="+" type="Button" parent="HBoxContainer/Buy/TabContainer/Potion2/VBoxContainer/Item3/Item1/Quantity" unique_id=1899544426]
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
@@ -296,49 +365,52 @@ grow_horizontal = 0
 grow_vertical = 2
 text = "+"
 
-[node name="Money" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item3" unique_id=1588920341]
+[node name="Price" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion2/VBoxContainer/Item3/Item1" unique_id=590693816]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
-text = "9999"
+theme_override_font_sizes/font_size = 24
+text = "999"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Item4" type="HBoxContainer" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer" unique_id=890107323]
+[node name="Item4" type="Button" parent="HBoxContainer/Buy/TabContainer/Potion2/VBoxContainer" unique_id=1256376332]
 layout_mode = 2
+size_flags_vertical = 4
+icon = ExtResource("15_awwff")
 
-[node name="Button" type="Button" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item4" unique_id=41527679]
+[node name="Item1" type="HBoxContainer" parent="HBoxContainer/Buy/TabContainer/Potion2/VBoxContainer/Item4" unique_id=308478695]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Hold" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion2/VBoxContainer/Item4/Item1" unique_id=746335909]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
-text = "100"
-icon = ExtResource("14_62rop")
-
-[node name="HoldQuantity" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item4" unique_id=3451259]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
+theme_override_font_sizes/font_size = 24
 text = "99"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Decription" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item4" unique_id=1191803435]
+[node name="Decription" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion2/VBoxContainer/Item4/Item1" unique_id=663991383]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
-text = "SP+50"
+theme_override_font_sizes/font_size = 24
+text = "HP+10"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="BuyQuantity" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item4" unique_id=2007137208]
+[node name="Quantity" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion2/VBoxContainer/Item4/Item1" unique_id=1584345344]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
+theme_override_font_sizes/font_size = 24
 text = "99"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="-" type="Button" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item4/BuyQuantity" unique_id=1977359157]
+[node name="-" type="Button" parent="HBoxContainer/Buy/TabContainer/Potion2/VBoxContainer/Item4/Item1/Quantity" unique_id=1942277598]
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
@@ -349,7 +421,7 @@ offset_bottom = 15.5
 grow_vertical = 2
 text = "-"
 
-[node name="+" type="Button" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item4/BuyQuantity" unique_id=1457520287]
+[node name="+" type="Button" parent="HBoxContainer/Buy/TabContainer/Potion2/VBoxContainer/Item4/Item1/Quantity" unique_id=1467454462]
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
@@ -363,18 +435,18 @@ grow_horizontal = 0
 grow_vertical = 2
 text = "+"
 
-[node name="Money" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item4" unique_id=272173270]
+[node name="Price" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion2/VBoxContainer/Item4/Item1" unique_id=1578164568]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
-text = "9999"
+theme_override_font_sizes/font_size = 24
+text = "999"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Armor" type="ScrollContainer" parent="HBoxContainer/Buy/TabContainer" unique_id=179922739]
 visible = false
 layout_mode = 2
-metadata/_tab_index = 1
+metadata/_tab_index = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Buy/TabContainer/Armor" unique_id=194530375]
 layout_mode = 2
@@ -489,7 +561,7 @@ vertical_alignment = 1
 [node name="Weapon" type="ScrollContainer" parent="HBoxContainer/Buy/TabContainer" unique_id=221738775]
 visible = false
 layout_mode = 2
-metadata/_tab_index = 2
+metadata/_tab_index = 3
 
 [node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Buy/TabContainer/Weapon" unique_id=1738302325]
 layout_mode = 2
@@ -601,127 +673,6 @@ text = "9999"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Jewerly" type="ScrollContainer" parent="HBoxContainer/Buy/TabContainer" unique_id=523947301]
-visible = false
-layout_mode = 2
-metadata/_tab_index = 3
-
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Buy/TabContainer/Jewerly" unique_id=751387994]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Title" type="HBoxContainer" parent="HBoxContainer/Buy/TabContainer/Jewerly/VBoxContainer" unique_id=1373883782]
-layout_mode = 2
-
-[node name="Item" type="Label" parent="HBoxContainer/Buy/TabContainer/Jewerly/VBoxContainer/Title" unique_id=1541410617]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
-text = "Item"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Hold" type="Label" parent="HBoxContainer/Buy/TabContainer/Jewerly/VBoxContainer/Title" unique_id=1051495500]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
-text = "Hold"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Description" type="Label" parent="HBoxContainer/Buy/TabContainer/Jewerly/VBoxContainer/Title" unique_id=905991228]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
-text = "Description"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Quantity" type="Label" parent="HBoxContainer/Buy/TabContainer/Jewerly/VBoxContainer/Title" unique_id=1188660459]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
-text = "Quantity"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Total" type="Label" parent="HBoxContainer/Buy/TabContainer/Jewerly/VBoxContainer/Title" unique_id=801634160]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
-text = "Total"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Item1" type="HBoxContainer" parent="HBoxContainer/Buy/TabContainer/Jewerly/VBoxContainer" unique_id=1499616741]
-layout_mode = 2
-
-[node name="Button" type="Button" parent="HBoxContainer/Buy/TabContainer/Jewerly/VBoxContainer/Item1" unique_id=692377203]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
-text = "100"
-icon = ExtResource("15_62rop")
-
-[node name="-" type="Button" parent="HBoxContainer/Buy/TabContainer/Jewerly/VBoxContainer/Item1/Button" unique_id=1217849462]
-layout_mode = 1
-offset_left = 517.0
-offset_top = 24.0
-offset_right = 543.0
-offset_bottom = 77.0
-text = "-"
-
-[node name="+" type="Button" parent="HBoxContainer/Buy/TabContainer/Jewerly/VBoxContainer/Item1/Button" unique_id=342236146]
-layout_mode = 1
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_left = 517.0
-offset_top = -78.0
-offset_right = 543.0
-offset_bottom = -25.0
-grow_vertical = 0
-text = "+"
-
-[node name="HoldQuantity" type="Label" parent="HBoxContainer/Buy/TabContainer/Jewerly/VBoxContainer/Item1" unique_id=749960252]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
-text = "99"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Decription" type="Label" parent="HBoxContainer/Buy/TabContainer/Jewerly/VBoxContainer/Item1" unique_id=478356863]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
-text = "SP Limit + 100"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="BuyQuantity" type="Label" parent="HBoxContainer/Buy/TabContainer/Jewerly/VBoxContainer/Item1" unique_id=384444148]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
-text = "99"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Money" type="Label" parent="HBoxContainer/Buy/TabContainer/Jewerly/VBoxContainer/Item1" unique_id=135214551]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
-text = "9999"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Button" type="Button" parent="HBoxContainer/Buy" unique_id=1590709869]
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 8
-icon = ExtResource("2_lwavh")
-
 [node name="Player" type="PanelContainer" parent="HBoxContainer" unique_id=1005053292]
 layout_mode = 2
 size_flags_horizontal = 3
@@ -732,19 +683,19 @@ layout_mode = 2
 [node name="Player" type="Label" parent="HBoxContainer/Player/PlayerInformation" unique_id=14344697]
 layout_mode = 2
 size_flags_vertical = 0
-theme_override_font_sizes/font_size = 36
-text = "Player Information"
+theme_override_font_sizes/font_size = 32
+text = "Warrior"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Equipment&&Skill" type="HBoxContainer" parent="HBoxContainer/Player/PlayerInformation" unique_id=1728473335]
 layout_mode = 2
+alignment = 1
 
 [node name="Equip" type="GridContainer" parent="HBoxContainer/Player/PlayerInformation/Equipment&&Skill" unique_id=2127222164]
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 4
-size_flags_stretch_ratio = 3.0
 
 [node name="Weapon" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Equipment&&Skill/Equip" unique_id=1775188326]
 layout_mode = 2
@@ -767,15 +718,13 @@ layout_mode = 2
 
 [node name="Warrior" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Equipment&&Skill/PlayerPhoto" unique_id=1000013860]
 layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-size_flags_stretch_ratio = 4.0
-texture = ExtResource("7_ok5pp")
+texture = ExtResource("11_lwavh")
+stretch_mode = 5
 
 [node name="Label" type="Label" parent="HBoxContainer/Player/PlayerInformation/Equipment&&Skill/PlayerPhoto" unique_id=215825280]
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
-text = "Coin:9999"
+text = "Coins:9999"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -783,7 +732,6 @@ vertical_alignment = 1
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 4
-size_flags_stretch_ratio = 4.0
 
 [node name="Skill01" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Equipment&&Skill/Skill" unique_id=1125211141]
 layout_mode = 2
@@ -801,208 +749,229 @@ texture = ExtResource("11_awwff")
 layout_mode = 2
 texture = ExtResource("12_62rop")
 
-[node name="Potion" type="Label" parent="HBoxContainer/Player/PlayerInformation" unique_id=413834587]
+[node name="HSeparator1" type="HSeparator" parent="HBoxContainer/Player/PlayerInformation" unique_id=1500025227]
 layout_mode = 2
-size_flags_vertical = 0
-theme_override_font_sizes/font_size = 36
-text = "Potion"
-horizontal_alignment = 1
-vertical_alignment = 1
 
 [node name="‌Potion" type="HBoxContainer" parent="HBoxContainer/Player/PlayerInformation" unique_id=838309422]
 layout_mode = 2
+alignment = 1
 
 [node name="TextureRect" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/‌Potion" unique_id=452174432]
 layout_mode = 2
 size_flags_horizontal = 3
 texture = ExtResource("11_62rop")
+stretch_mode = 5
 
-[node name="TextureRect2" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/‌Potion" unique_id=1596667939]
+[node name="Label" type="Label" parent="HBoxContainer/Player/PlayerInformation/‌Potion/TextureRect" unique_id=1402513580]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -23.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "99"
+
+[node name="TextureRect2" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/‌Potion" unique_id=1246994671]
 layout_mode = 2
 size_flags_horizontal = 3
-texture = ExtResource("12_lwavh")
+texture = ExtResource("11_62rop")
+stretch_mode = 5
 
-[node name="TextureRect3" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/‌Potion" unique_id=1301852718]
+[node name="Label" type="Label" parent="HBoxContainer/Player/PlayerInformation/‌Potion/TextureRect2" unique_id=971542724]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -23.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "99"
+
+[node name="TextureRect3" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/‌Potion" unique_id=167517228]
 layout_mode = 2
 size_flags_horizontal = 3
-texture = ExtResource("13_ckwsy")
+texture = ExtResource("11_62rop")
+stretch_mode = 5
 
-[node name="TextureRect4" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/‌Potion" unique_id=1374109164]
+[node name="Label" type="Label" parent="HBoxContainer/Player/PlayerInformation/‌Potion/TextureRect3" unique_id=1699293717]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -23.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "99"
+
+[node name="TextureRect4" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/‌Potion" unique_id=156711740]
 layout_mode = 2
 size_flags_horizontal = 3
-texture = ExtResource("14_62rop")
+texture = ExtResource("11_62rop")
+stretch_mode = 5
 
-[node name="Parameter" type="Label" parent="HBoxContainer/Player/PlayerInformation" unique_id=755204493]
+[node name="Label" type="Label" parent="HBoxContainer/Player/PlayerInformation/‌Potion/TextureRect4" unique_id=1571925036]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -23.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "99"
+
+[node name="HSeparator2" type="HSeparator" parent="HBoxContainer/Player/PlayerInformation" unique_id=264241190]
 layout_mode = 2
-theme_override_font_sizes/font_size = 32
-text = "Parameter"
-horizontal_alignment = 1
-vertical_alignment = 1
 
 [node name="Parameters" type="GridContainer" parent="HBoxContainer/Player/PlayerInformation" unique_id=1449496123]
 layout_mode = 2
+columns = 2
 
 [node name="HP" type="HBoxContainer" parent="HBoxContainer/Player/PlayerInformation/Parameters" unique_id=2010040566]
 layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
 
-[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Parameters/HP" unique_id=1078401184]
-layout_mode = 2
-texture = ExtResource("13_6iqus")
-
-[node name="Label" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/HP" unique_id=1192817113]
-layout_mode = 2
-theme_override_font_sizes/font_size = 32
-text = "MAXHP"
-
-[node name="Label2" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/HP" unique_id=1588518529]
-layout_mode = 2
-theme_override_font_sizes/font_size = 32
-text = "999"
-
-[node name="Label3" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/HP" unique_id=1717303409]
-layout_mode = 2
-theme_override_font_sizes/font_size = 32
-text = "+/-"
-
-[node name="Label4" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/HP" unique_id=932577448]
-layout_mode = 2
-theme_override_font_sizes/font_size = 32
-text = "99"
-
-[node name="SP" type="HBoxContainer" parent="HBoxContainer/Player/PlayerInformation/Parameters" unique_id=1171208808]
-layout_mode = 2
-
-[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Parameters/SP" unique_id=1581052887]
-layout_mode = 2
-texture = ExtResource("13_6iqus")
-
-[node name="Label" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/SP" unique_id=116131212]
-layout_mode = 2
-theme_override_font_sizes/font_size = 32
-text = "MAXSP"
-
-[node name="Label2" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/SP" unique_id=760737644]
-layout_mode = 2
-theme_override_font_sizes/font_size = 32
-text = "999"
-
-[node name="Label3" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/SP" unique_id=965572234]
-layout_mode = 2
-theme_override_font_sizes/font_size = 32
-text = "+/-"
-
-[node name="Label4" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/SP" unique_id=1721650167]
-layout_mode = 2
-theme_override_font_sizes/font_size = 32
-text = "99"
-
-[node name="Attack" type="HBoxContainer" parent="HBoxContainer/Player/PlayerInformation/Parameters" unique_id=1916578747]
-layout_mode = 2
-
-[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Parameters/Attack" unique_id=1807506900]
-layout_mode = 2
-texture = ExtResource("2_du886")
-
-[node name="Label" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/Attack" unique_id=2017936599]
-layout_mode = 2
-theme_override_font_sizes/font_size = 32
-text = "ATTACK"
-
-[node name="Label2" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/Attack" unique_id=1977123808]
-layout_mode = 2
-theme_override_font_sizes/font_size = 32
-text = "999"
-
-[node name="Label3" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/Attack" unique_id=1376321028]
-layout_mode = 2
-theme_override_font_sizes/font_size = 32
-text = "+/-"
-
-[node name="Label4" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/Attack" unique_id=842445543]
-layout_mode = 2
-theme_override_font_sizes/font_size = 32
-text = "99"
-
-[node name="Guard" type="HBoxContainer" parent="HBoxContainer/Player/PlayerInformation/Parameters" unique_id=1196300373]
-layout_mode = 2
-
-[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Parameters/Guard" unique_id=2111826472]
+[node name="ParaIcon" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Parameters/HP" unique_id=1078401184]
 layout_mode = 2
 texture = ExtResource("15_awwff")
+stretch_mode = 5
 
-[node name="Label" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/Guard" unique_id=870995257]
+[node name="ParaName" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/HP" unique_id=1192817113]
 layout_mode = 2
-theme_override_font_sizes/font_size = 32
-text = "DEFANCE"
+theme_override_font_sizes/font_size = 24
+text = "MAXHP:"
 
-[node name="Label2" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/Guard" unique_id=1259548650]
+[node name="CurrentValue" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/HP" unique_id=1588518529]
 layout_mode = 2
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 24
 text = "999"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Label3" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/Guard" unique_id=1344021733]
+[node name="ChangeValue" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/HP" unique_id=1717303409]
 layout_mode = 2
-theme_override_font_sizes/font_size = 32
-text = "+/-"
+theme_override_font_sizes/font_size = 24
+text = "+/- 99"
 
-[node name="Label4" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/Guard" unique_id=900775413]
+[node name="SP" type="HBoxContainer" parent="HBoxContainer/Player/PlayerInformation/Parameters" unique_id=1850924360]
 layout_mode = 2
-theme_override_font_sizes/font_size = 32
-text = "99"
+size_flags_horizontal = 3
+alignment = 1
 
-[node name="HitRatio" type="HBoxContainer" parent="HBoxContainer/Player/PlayerInformation/Parameters" unique_id=1242337788]
+[node name="ParaIcon" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Parameters/SP" unique_id=453887867]
 layout_mode = 2
+texture = ExtResource("19_ckwsy")
+stretch_mode = 5
 
-[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Parameters/HitRatio" unique_id=1836212022]
+[node name="ParaName" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/SP" unique_id=792150584]
 layout_mode = 2
-texture = ExtResource("10_ia46t")
+theme_override_font_sizes/font_size = 24
+text = "MAXHP:"
 
-[node name="Label" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/HitRatio" unique_id=1327711798]
+[node name="CurrentValue" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/SP" unique_id=63365697]
 layout_mode = 2
-theme_override_font_sizes/font_size = 32
-text = "HITRATIO"
-
-[node name="Label2" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/HitRatio" unique_id=260256130]
-layout_mode = 2
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 24
 text = "999"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Label3" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/HitRatio" unique_id=1881696421]
+[node name="ChangeValue" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/SP" unique_id=144506864]
 layout_mode = 2
-theme_override_font_sizes/font_size = 32
-text = "+/-"
+theme_override_font_sizes/font_size = 24
+text = "+/- 99"
 
-[node name="Label4" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/HitRatio" unique_id=1710555963]
+[node name="ATK" type="HBoxContainer" parent="HBoxContainer/Player/PlayerInformation/Parameters" unique_id=491128258]
 layout_mode = 2
-theme_override_font_sizes/font_size = 32
-text = "99"
+size_flags_horizontal = 3
+alignment = 1
 
-[node name="Speed" type="HBoxContainer" parent="HBoxContainer/Player/PlayerInformation/Parameters" unique_id=1238444077]
+[node name="ParaIcon" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Parameters/ATK" unique_id=1184483628]
 layout_mode = 2
+texture = ExtResource("17_lwavh")
+stretch_mode = 5
 
-[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Parameters/Speed" unique_id=1291739086]
+[node name="ParaName" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/ATK" unique_id=2077712531]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "MAXHP:"
+
+[node name="CurrentValue" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/ATK" unique_id=701783329]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ChangeValue" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/ATK" unique_id=564196853]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "+/- 99"
+
+[node name="DEF" type="HBoxContainer" parent="HBoxContainer/Player/PlayerInformation/Parameters" unique_id=412500065]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="ParaIcon" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Parameters/DEF" unique_id=1041025800]
 layout_mode = 2
 texture = ExtResource("11_8l6mh")
+stretch_mode = 5
 
-[node name="Label" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/Speed" unique_id=1247199951]
+[node name="ParaName" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/DEF" unique_id=1643872127]
 layout_mode = 2
-theme_override_font_sizes/font_size = 32
-text = "SPEED"
+theme_override_font_sizes/font_size = 24
+text = "MAXHP:"
 
-[node name="Label2" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/Speed" unique_id=1192121741]
+[node name="CurrentValue" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/DEF" unique_id=740916533]
 layout_mode = 2
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 24
 text = "999"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Label3" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/Speed" unique_id=1862525782]
+[node name="ChangeValue" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/DEF" unique_id=363909614]
 layout_mode = 2
-theme_override_font_sizes/font_size = 32
-text = "+/-"
+theme_override_font_sizes/font_size = 24
+text = "+/- 99"
 
-[node name="Label4" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/Speed" unique_id=1908623956]
+[node name="SPEED" type="HBoxContainer" parent="HBoxContainer/Player/PlayerInformation/Parameters" unique_id=1136471115]
 layout_mode = 2
-theme_override_font_sizes/font_size = 32
-text = "99"
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="ParaIcon" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Parameters/SPEED" unique_id=237265621]
+layout_mode = 2
+texture = ExtResource("20_ckwsy")
+
+[node name="ParaName" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/SPEED" unique_id=1629303375]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "MAXHP:"
+
+[node name="CurrentValue" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/SPEED" unique_id=1617048521]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ChangeValue" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/SPEED" unique_id=1707231836]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "+/- 99"
 
 [node name="Sale" type="PanelContainer" parent="HBoxContainer" unique_id=2083151647]
 layout_mode = 2
@@ -1014,134 +983,141 @@ size_flags_stretch_ratio = 5.0
 tab_alignment = 1
 current_tab = 0
 
-[node name="Armor" type="ScrollContainer" parent="HBoxContainer/Sale/TabContainer" unique_id=1045230067]
+[node name="Potion2" type="ScrollContainer" parent="HBoxContainer/Sale/TabContainer" unique_id=574521610]
 layout_mode = 2
 metadata/_tab_index = 0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Sale/TabContainer/Armor" unique_id=637292876]
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Sale/TabContainer/Potion2" unique_id=1707077500]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Title" type="HBoxContainer" parent="HBoxContainer/Sale/TabContainer/Armor/VBoxContainer" unique_id=1694560796]
+[node name="Title" type="HBoxContainer" parent="HBoxContainer/Sale/TabContainer/Potion2/VBoxContainer" unique_id=1512765471]
 layout_mode = 2
 
-[node name="Item" type="Label" parent="HBoxContainer/Sale/TabContainer/Armor/VBoxContainer/Title" unique_id=1373056647]
+[node name="Item" type="Label" parent="HBoxContainer/Sale/TabContainer/Potion2/VBoxContainer/Title" unique_id=2051399222]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
+theme_override_font_sizes/font_size = 24
 text = "Item"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Hold" type="Label" parent="HBoxContainer/Sale/TabContainer/Armor/VBoxContainer/Title" unique_id=547350217]
+[node name="Hold" type="Label" parent="HBoxContainer/Sale/TabContainer/Potion2/VBoxContainer/Title" unique_id=890088852]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
+theme_override_font_sizes/font_size = 24
 text = "Hold"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Description" type="Label" parent="HBoxContainer/Sale/TabContainer/Armor/VBoxContainer/Title" unique_id=1344911590]
+[node name="Description" type="Label" parent="HBoxContainer/Sale/TabContainer/Potion2/VBoxContainer/Title" unique_id=690674240]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
+theme_override_font_sizes/font_size = 24
 text = "Description"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Quantity" type="Label" parent="HBoxContainer/Sale/TabContainer/Armor/VBoxContainer/Title" unique_id=1124572195]
+[node name="Quantity" type="Label" parent="HBoxContainer/Sale/TabContainer/Potion2/VBoxContainer/Title" unique_id=2116678433]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
+theme_override_font_sizes/font_size = 24
 text = "Quantity"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Total" type="Label" parent="HBoxContainer/Sale/TabContainer/Armor/VBoxContainer/Title" unique_id=581308544]
+[node name="Price" type="Label" parent="HBoxContainer/Sale/TabContainer/Potion2/VBoxContainer/Title" unique_id=1662141146]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
-text = "Total"
+theme_override_font_sizes/font_size = 24
+text = "Price"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Item1" type="HBoxContainer" parent="HBoxContainer/Sale/TabContainer/Armor/VBoxContainer" unique_id=1135182480]
+[node name="Item1" type="HBoxContainer" parent="HBoxContainer/Sale/TabContainer/Potion2/VBoxContainer" unique_id=1001937207]
 layout_mode = 2
 
-[node name="Button" type="Button" parent="HBoxContainer/Sale/TabContainer/Armor/VBoxContainer/Item1" unique_id=1687096388]
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Sale/TabContainer/Potion2/VBoxContainer/Item1" unique_id=1108911967]
+layout_mode = 2
+texture = ExtResource("15_awwff")
+stretch_mode = 5
+
+[node name="HoldQuantity" type="Label" parent="HBoxContainer/Sale/TabContainer/Potion2/VBoxContainer/Item1" unique_id=1172159592]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
-text = "100"
-icon = ExtResource("15_62rop")
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="-" type="Button" parent="HBoxContainer/Sale/TabContainer/Armor/VBoxContainer/Item1/Button" unique_id=1767941838]
+[node name="Decription" type="Label" parent="HBoxContainer/Sale/TabContainer/Potion2/VBoxContainer/Item1" unique_id=1756080862]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "HP+10"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BuyQuantity" type="Label" parent="HBoxContainer/Sale/TabContainer/Potion2/VBoxContainer/Item1" unique_id=1134385308]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="-" type="Button" parent="HBoxContainer/Sale/TabContainer/Potion2/VBoxContainer/Item1/BuyQuantity" unique_id=160774165]
 layout_mode = 1
-offset_left = 517.0
-offset_top = 24.0
-offset_right = 543.0
-offset_bottom = 77.0
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -15.5
+offset_right = 14.0
+offset_bottom = 15.5
+grow_vertical = 2
 text = "-"
 
-[node name="+" type="Button" parent="HBoxContainer/Sale/TabContainer/Armor/VBoxContainer/Item1/Button" unique_id=22335783]
+[node name="+" type="Button" parent="HBoxContainer/Sale/TabContainer/Potion2/VBoxContainer/Item1/BuyQuantity" unique_id=800906471]
 layout_mode = 1
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_left = 517.0
-offset_top = -78.0
-offset_right = 543.0
-offset_bottom = -25.0
-grow_vertical = 0
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -18.0
+offset_top = -15.5
+offset_bottom = 15.5
+grow_horizontal = 0
+grow_vertical = 2
 text = "+"
 
-[node name="HoldQuantity" type="Label" parent="HBoxContainer/Sale/TabContainer/Armor/VBoxContainer/Item1" unique_id=1742770577]
+[node name="Price" type="Label" parent="HBoxContainer/Sale/TabContainer/Potion2/VBoxContainer/Item1" unique_id=226288127]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
-text = "99"
+text = "999"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Decription" type="Label" parent="HBoxContainer/Sale/TabContainer/Armor/VBoxContainer/Item1" unique_id=1604696403]
+[node name="Button" type="Button" parent="HBoxContainer/Sale/TabContainer/Potion2/VBoxContainer" unique_id=1631586444]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
-text = "SP Limit + 100"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="BuyQuantity" type="Label" parent="HBoxContainer/Sale/TabContainer/Armor/VBoxContainer/Item1" unique_id=518597163]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
-text = "99"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Money" type="Label" parent="HBoxContainer/Sale/TabContainer/Armor/VBoxContainer/Item1" unique_id=1159606972]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
+size_flags_horizontal = 8
+size_flags_vertical = 10
+theme_override_font_sizes/font_size = 24
 text = "9999"
-horizontal_alignment = 1
-vertical_alignment = 1
+icon = ExtResource("2_du886")
 
-[node name="Weapon" type="ScrollContainer" parent="HBoxContainer/Sale/TabContainer" unique_id=1004719566]
+[node name="Armor2" type="ScrollContainer" parent="HBoxContainer/Sale/TabContainer" unique_id=1199266394]
 visible = false
 layout_mode = 2
 metadata/_tab_index = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Sale/TabContainer/Weapon" unique_id=1467425021]
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Sale/TabContainer/Armor2" unique_id=442949277]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Title" type="HBoxContainer" parent="HBoxContainer/Sale/TabContainer/Weapon/VBoxContainer" unique_id=1865330526]
+[node name="Title" type="HBoxContainer" parent="HBoxContainer/Sale/TabContainer/Armor2/VBoxContainer" unique_id=1024932035]
 layout_mode = 2
 
-[node name="Item" type="Label" parent="HBoxContainer/Sale/TabContainer/Weapon/VBoxContainer/Title" unique_id=1417799566]
+[node name="Item" type="Label" parent="HBoxContainer/Sale/TabContainer/Armor2/VBoxContainer/Title" unique_id=1815681987]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.0
@@ -1149,7 +1125,7 @@ text = "Item"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Hold" type="Label" parent="HBoxContainer/Sale/TabContainer/Weapon/VBoxContainer/Title" unique_id=977591266]
+[node name="Hold" type="Label" parent="HBoxContainer/Sale/TabContainer/Armor2/VBoxContainer/Title" unique_id=930096414]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.0
@@ -1157,7 +1133,7 @@ text = "Hold"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Description" type="Label" parent="HBoxContainer/Sale/TabContainer/Weapon/VBoxContainer/Title" unique_id=886904020]
+[node name="Description" type="Label" parent="HBoxContainer/Sale/TabContainer/Armor2/VBoxContainer/Title" unique_id=717707314]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.0
@@ -1165,7 +1141,7 @@ text = "Description"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Quantity" type="Label" parent="HBoxContainer/Sale/TabContainer/Weapon/VBoxContainer/Title" unique_id=450075824]
+[node name="Quantity" type="Label" parent="HBoxContainer/Sale/TabContainer/Armor2/VBoxContainer/Title" unique_id=1867001245]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.0
@@ -1173,7 +1149,7 @@ text = "Quantity"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Total" type="Label" parent="HBoxContainer/Sale/TabContainer/Weapon/VBoxContainer/Title" unique_id=2044619424]
+[node name="Total" type="Label" parent="HBoxContainer/Sale/TabContainer/Armor2/VBoxContainer/Title" unique_id=856869774]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.0
@@ -1181,17 +1157,17 @@ text = "Total"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Item1" type="HBoxContainer" parent="HBoxContainer/Sale/TabContainer/Weapon/VBoxContainer" unique_id=1071385271]
+[node name="Item1" type="HBoxContainer" parent="HBoxContainer/Sale/TabContainer/Armor2/VBoxContainer" unique_id=691509200]
 layout_mode = 2
 
-[node name="Button" type="Button" parent="HBoxContainer/Sale/TabContainer/Weapon/VBoxContainer/Item1" unique_id=1734144381]
+[node name="Button" type="Button" parent="HBoxContainer/Sale/TabContainer/Armor2/VBoxContainer/Item1" unique_id=1415051867]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.0
 text = "100"
 icon = ExtResource("15_62rop")
 
-[node name="-" type="Button" parent="HBoxContainer/Sale/TabContainer/Weapon/VBoxContainer/Item1/Button" unique_id=1401749668]
+[node name="-" type="Button" parent="HBoxContainer/Sale/TabContainer/Armor2/VBoxContainer/Item1/Button" unique_id=1032175246]
 layout_mode = 1
 offset_left = 517.0
 offset_top = 24.0
@@ -1199,7 +1175,7 @@ offset_right = 543.0
 offset_bottom = 77.0
 text = "-"
 
-[node name="+" type="Button" parent="HBoxContainer/Sale/TabContainer/Weapon/VBoxContainer/Item1/Button" unique_id=103191465]
+[node name="+" type="Button" parent="HBoxContainer/Sale/TabContainer/Armor2/VBoxContainer/Item1/Button" unique_id=1555891155]
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
@@ -1211,7 +1187,7 @@ offset_bottom = -25.0
 grow_vertical = 0
 text = "+"
 
-[node name="HoldQuantity" type="Label" parent="HBoxContainer/Sale/TabContainer/Weapon/VBoxContainer/Item1" unique_id=1206575985]
+[node name="HoldQuantity" type="Label" parent="HBoxContainer/Sale/TabContainer/Armor2/VBoxContainer/Item1" unique_id=921523538]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.0
@@ -1219,7 +1195,7 @@ text = "99"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Decription" type="Label" parent="HBoxContainer/Sale/TabContainer/Weapon/VBoxContainer/Item1" unique_id=557218264]
+[node name="Decription" type="Label" parent="HBoxContainer/Sale/TabContainer/Armor2/VBoxContainer/Item1" unique_id=1120199051]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.0
@@ -1227,7 +1203,7 @@ text = "SP Limit + 100"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="BuyQuantity" type="Label" parent="HBoxContainer/Sale/TabContainer/Weapon/VBoxContainer/Item1" unique_id=2100061831]
+[node name="BuyQuantity" type="Label" parent="HBoxContainer/Sale/TabContainer/Armor2/VBoxContainer/Item1" unique_id=314634137]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.0
@@ -1235,7 +1211,7 @@ text = "99"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Money" type="Label" parent="HBoxContainer/Sale/TabContainer/Weapon/VBoxContainer/Item1" unique_id=1804908157]
+[node name="Money" type="Label" parent="HBoxContainer/Sale/TabContainer/Armor2/VBoxContainer/Item1" unique_id=1517336860]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.0
@@ -1243,20 +1219,20 @@ text = "9999"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Jewerly" type="ScrollContainer" parent="HBoxContainer/Sale/TabContainer" unique_id=34923383]
+[node name="Weapon2" type="ScrollContainer" parent="HBoxContainer/Sale/TabContainer" unique_id=1298713765]
 visible = false
 layout_mode = 2
 metadata/_tab_index = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Sale/TabContainer/Jewerly" unique_id=382632186]
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Sale/TabContainer/Weapon2" unique_id=202997261]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Title" type="HBoxContainer" parent="HBoxContainer/Sale/TabContainer/Jewerly/VBoxContainer" unique_id=1616782376]
+[node name="Title" type="HBoxContainer" parent="HBoxContainer/Sale/TabContainer/Weapon2/VBoxContainer" unique_id=1313698606]
 layout_mode = 2
 
-[node name="Item" type="Label" parent="HBoxContainer/Sale/TabContainer/Jewerly/VBoxContainer/Title" unique_id=1640083220]
+[node name="Item" type="Label" parent="HBoxContainer/Sale/TabContainer/Weapon2/VBoxContainer/Title" unique_id=741117357]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.0
@@ -1264,7 +1240,7 @@ text = "Item"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Hold" type="Label" parent="HBoxContainer/Sale/TabContainer/Jewerly/VBoxContainer/Title" unique_id=1375531801]
+[node name="Hold" type="Label" parent="HBoxContainer/Sale/TabContainer/Weapon2/VBoxContainer/Title" unique_id=1827812284]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.0
@@ -1272,7 +1248,7 @@ text = "Hold"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Description" type="Label" parent="HBoxContainer/Sale/TabContainer/Jewerly/VBoxContainer/Title" unique_id=859126931]
+[node name="Description" type="Label" parent="HBoxContainer/Sale/TabContainer/Weapon2/VBoxContainer/Title" unique_id=2028779085]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.0
@@ -1280,7 +1256,7 @@ text = "Description"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Quantity" type="Label" parent="HBoxContainer/Sale/TabContainer/Jewerly/VBoxContainer/Title" unique_id=2045741147]
+[node name="Quantity" type="Label" parent="HBoxContainer/Sale/TabContainer/Weapon2/VBoxContainer/Title" unique_id=1761019553]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.0
@@ -1288,7 +1264,7 @@ text = "Quantity"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Total" type="Label" parent="HBoxContainer/Sale/TabContainer/Jewerly/VBoxContainer/Title" unique_id=1857925590]
+[node name="Total" type="Label" parent="HBoxContainer/Sale/TabContainer/Weapon2/VBoxContainer/Title" unique_id=603283699]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.0
@@ -1296,17 +1272,17 @@ text = "Total"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Item1" type="HBoxContainer" parent="HBoxContainer/Sale/TabContainer/Jewerly/VBoxContainer" unique_id=1408060719]
+[node name="Item1" type="HBoxContainer" parent="HBoxContainer/Sale/TabContainer/Weapon2/VBoxContainer" unique_id=1936634261]
 layout_mode = 2
 
-[node name="Button" type="Button" parent="HBoxContainer/Sale/TabContainer/Jewerly/VBoxContainer/Item1" unique_id=981350566]
+[node name="Button" type="Button" parent="HBoxContainer/Sale/TabContainer/Weapon2/VBoxContainer/Item1" unique_id=893941246]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.0
 text = "100"
 icon = ExtResource("15_62rop")
 
-[node name="-" type="Button" parent="HBoxContainer/Sale/TabContainer/Jewerly/VBoxContainer/Item1/Button" unique_id=1285808556]
+[node name="-" type="Button" parent="HBoxContainer/Sale/TabContainer/Weapon2/VBoxContainer/Item1/Button" unique_id=685444342]
 layout_mode = 1
 offset_left = 517.0
 offset_top = 24.0
@@ -1314,7 +1290,7 @@ offset_right = 543.0
 offset_bottom = 77.0
 text = "-"
 
-[node name="+" type="Button" parent="HBoxContainer/Sale/TabContainer/Jewerly/VBoxContainer/Item1/Button" unique_id=1936458310]
+[node name="+" type="Button" parent="HBoxContainer/Sale/TabContainer/Weapon2/VBoxContainer/Item1/Button" unique_id=1928462524]
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
@@ -1326,7 +1302,7 @@ offset_bottom = -25.0
 grow_vertical = 0
 text = "+"
 
-[node name="HoldQuantity" type="Label" parent="HBoxContainer/Sale/TabContainer/Jewerly/VBoxContainer/Item1" unique_id=701861026]
+[node name="HoldQuantity" type="Label" parent="HBoxContainer/Sale/TabContainer/Weapon2/VBoxContainer/Item1" unique_id=548587276]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.0
@@ -1334,7 +1310,7 @@ text = "99"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Decription" type="Label" parent="HBoxContainer/Sale/TabContainer/Jewerly/VBoxContainer/Item1" unique_id=1857189017]
+[node name="Decription" type="Label" parent="HBoxContainer/Sale/TabContainer/Weapon2/VBoxContainer/Item1" unique_id=1527632224]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.0
@@ -1342,7 +1318,7 @@ text = "SP Limit + 100"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="BuyQuantity" type="Label" parent="HBoxContainer/Sale/TabContainer/Jewerly/VBoxContainer/Item1" unique_id=1960388186]
+[node name="BuyQuantity" type="Label" parent="HBoxContainer/Sale/TabContainer/Weapon2/VBoxContainer/Item1" unique_id=29017147]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.0
@@ -1350,7 +1326,7 @@ text = "99"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Money" type="Label" parent="HBoxContainer/Sale/TabContainer/Jewerly/VBoxContainer/Item1" unique_id=448488063]
+[node name="Money" type="Label" parent="HBoxContainer/Sale/TabContainer/Weapon2/VBoxContainer/Item1" unique_id=1379780965]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.0
@@ -1358,8 +1334,117 @@ text = "9999"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Button" type="Button" parent="HBoxContainer/Sale" unique_id=1838232879]
+[node name="Jewerly2" type="ScrollContainer" parent="HBoxContainer/Sale/TabContainer" unique_id=414835911]
+visible = false
 layout_mode = 2
-size_flags_horizontal = 8
-size_flags_vertical = 8
-icon = ExtResource("2_dxujh")
+metadata/_tab_index = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Sale/TabContainer/Jewerly2" unique_id=344895005]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Title" type="HBoxContainer" parent="HBoxContainer/Sale/TabContainer/Jewerly2/VBoxContainer" unique_id=490026275]
+layout_mode = 2
+
+[node name="Item" type="Label" parent="HBoxContainer/Sale/TabContainer/Jewerly2/VBoxContainer/Title" unique_id=527404854]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "Item"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Hold" type="Label" parent="HBoxContainer/Sale/TabContainer/Jewerly2/VBoxContainer/Title" unique_id=239054728]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "Hold"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Description" type="Label" parent="HBoxContainer/Sale/TabContainer/Jewerly2/VBoxContainer/Title" unique_id=1909127202]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "Description"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Quantity" type="Label" parent="HBoxContainer/Sale/TabContainer/Jewerly2/VBoxContainer/Title" unique_id=993098617]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "Quantity"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Total" type="Label" parent="HBoxContainer/Sale/TabContainer/Jewerly2/VBoxContainer/Title" unique_id=1491008053]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "Total"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Item1" type="HBoxContainer" parent="HBoxContainer/Sale/TabContainer/Jewerly2/VBoxContainer" unique_id=1908027135]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="HBoxContainer/Sale/TabContainer/Jewerly2/VBoxContainer/Item1" unique_id=853065286]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "100"
+icon = ExtResource("15_62rop")
+
+[node name="-" type="Button" parent="HBoxContainer/Sale/TabContainer/Jewerly2/VBoxContainer/Item1/Button" unique_id=105108949]
+layout_mode = 1
+offset_left = 517.0
+offset_top = 24.0
+offset_right = 543.0
+offset_bottom = 77.0
+text = "-"
+
+[node name="+" type="Button" parent="HBoxContainer/Sale/TabContainer/Jewerly2/VBoxContainer/Item1/Button" unique_id=781128208]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 517.0
+offset_top = -78.0
+offset_right = 543.0
+offset_bottom = -25.0
+grow_vertical = 0
+text = "+"
+
+[node name="HoldQuantity" type="Label" parent="HBoxContainer/Sale/TabContainer/Jewerly2/VBoxContainer/Item1" unique_id=621430063]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Decription" type="Label" parent="HBoxContainer/Sale/TabContainer/Jewerly2/VBoxContainer/Item1" unique_id=1160866333]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "SP Limit + 100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BuyQuantity" type="Label" parent="HBoxContainer/Sale/TabContainer/Jewerly2/VBoxContainer/Item1" unique_id=627152613]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Money" type="Label" parent="HBoxContainer/Sale/TabContainer/Jewerly2/VBoxContainer/Item1" unique_id=215621101]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+text = "9999"
+horizontal_alignment = 1
+vertical_alignment = 1

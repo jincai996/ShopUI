@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dssa4llao5oj4"]
+
+[ext_resource type="Texture2D" uid="uid://dm1jgfcf0dph3" path="res://icon.svg" id="1_ideak"]
+[ext_resource type="Script" uid="uid://dn2qo3t4nwiut" path="res://npc.gd" id="1_xxcha"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ti4ya"]
+size = Vector2(128, 128)
+
+[node name="NPC" type="Area2D" unique_id=887191322]
+script = ExtResource("1_xxcha")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2097772893]
+texture = ExtResource("1_ideak")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=579673910]
+shape = SubResource("RectangleShape2D_ti4ya")

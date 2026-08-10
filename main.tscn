@@ -1,12 +1,15 @@
 [gd_scene format=3 uid="uid://duw4ub3ufhlv"]
 
-[ext_resource type="PackedScene" uid="uid://d1qnplbkct6dx" path="res://shop_ui.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://dssa4llao5oj4" path="res://npc.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://cak70haonr8kt" path="res://warrior.tscn" id="2_0xm2m"]
 
 [node name="Main" type="Node2D" unique_id=1046488138]
 
-[node name="ShopUI" parent="." unique_id=223660456 instance=ExtResource("1_ig7tw")]
-anchors_preset = 0
-anchor_right = 0.0
-anchor_bottom = 0.0
-grow_horizontal = 1
-grow_vertical = 1
+[node name="NPC" parent="." unique_id=887191322 instance=ExtResource("1_ig7tw")]
+position = Vector2(600, 300)
+
+[node name="Warrior" parent="." unique_id=360351982 groups=["Player"] instance=ExtResource("2_0xm2m")]
+position = Vector2(461, 305)
+
+[connection signal="body_entered" from="NPC" to="NPC" method="_on_body_entered"]
+[connection signal="body_exited" from="NPC" to="NPC" method="_on_body_exited"]

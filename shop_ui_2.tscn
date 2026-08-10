@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://b7tshiaamjw8" path="res://Assets/38_free_fantasy_icons/Armor/heavy_shield_03.png" id="5_uka6v"]
 [ext_resource type="Texture2D" uid="uid://bidtkihyg8adw" path="res://Assets/32_free_medieval_jewerly_icons/brooch_38.png" id="6_68b56"]
 [ext_resource type="Texture2D" uid="uid://c2kupjd68imh3" path="res://Assets/32_free_medieval_jewerly_icons/ring_155.png" id="7_dd3ex"]
-[ext_resource type="Texture2D" uid="uid://cumwvid80lgvq" path="res://Assets/Warrior_Idle.png" id="8_lbnnx"]
+[ext_resource type="Texture2D" uid="uid://yetwajc5ivju" path="res://Assets/Human Avatars/Avatars_01.png" id="8_direc"]
 [ext_resource type="Texture2D" uid="uid://cthnevkc83h7h" path="res://Assets/32_free_fantasy_skill_icons/arcane_combat_01.png" id="9_i2x10"]
 [ext_resource type="Texture2D" uid="uid://djiixd6v0x87x" path="res://Assets/32_free_fantasy_skill_icons/demon_defense_03.png" id="10_8ps5i"]
 [ext_resource type="Texture2D" uid="uid://p15xfxs38jfu" path="res://Assets/32_free_fantasy_skill_icons/elf_combat_10.png" id="11_8yabl"]
@@ -1302,7 +1302,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 size_flags_stretch_ratio = 4.0
-texture = ExtResource("8_lbnnx")
+texture = ExtResource("8_direc")
 
 [node name="Skill" type="GridContainer" parent="HBoxContainer/MiddleRight/PlayerInformation/Equipment&&Skill" unique_id=177014919]
 layout_mode = 2
