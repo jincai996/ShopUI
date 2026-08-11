@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://57v76hwnul37"]
+
+[ext_resource type="Script" uid="uid://bchtp573aluf0" path="res://start_game.gd" id="1_redxk"]
+[ext_resource type="Texture2D" uid="uid://cbjgfmb4qun7l" path="res://Assets/Icons/Icon_02.png" id="2_redxk"]
+[ext_resource type="Texture2D" uid="uid://csxoxmpqey2pe" path="res://Assets/Icons/Icon_03.png" id="3_i1pu1"]
+[ext_resource type="Texture2D" uid="uid://tbs5hpi85kaa" path="res://Assets/Icons/Icon_04.png" id="4_mywg3"]
+[ext_resource type="Texture2D" uid="uid://c36uvftpdr6k1" path="res://Assets/Icons/Icon_05.png" id="5_vmqqe"]
+[ext_resource type="Texture2D" uid="uid://cptgahkqxyn76" path="res://Assets/Icons/Icon_06.png" id="6_xpden"]
+
+[sub_resource type="StyleBoxFlat" id="hover_red"]
+bg_color = Color(1, 0, 0, 1)
+
+[node name="StartGame" type="Control" unique_id=797754534]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_redxk")
+
+[node name="Label" type="Label" parent="." unique_id=1070126261]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -147.0
+offset_right = 147.0
+offset_bottom = 67.0
+grow_horizontal = 2
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 48
+text = "GAME START"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=148605761]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -520.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="WOOD" type="Button" parent="VBoxContainer" unique_id=1535739236]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/hover = SubResource("hover_red")
+icon = ExtResource("2_redxk")
+icon_alignment = 1
+
+[node name="COIN" type="Button" parent="VBoxContainer" unique_id=1589674508]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/hover = SubResource("hover_red")
+icon = ExtResource("3_i1pu1")
+icon_alignment = 1
+
+[node name="MEAT" type="Button" parent="VBoxContainer" unique_id=1487092962]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/hover = SubResource("hover_red")
+icon = ExtResource("4_mywg3")
+icon_alignment = 1
+
+[node name="SWORD" type="Button" parent="VBoxContainer" unique_id=254668663]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/hover = SubResource("hover_red")
+icon = ExtResource("5_vmqqe")
+icon_alignment = 1
+
+[node name="GUARD" type="Button" parent="VBoxContainer" unique_id=1073908970]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/hover = SubResource("hover_red")
+icon = ExtResource("6_xpden")
+icon_alignment = 1
