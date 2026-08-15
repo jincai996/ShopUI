@@ -1,37 +1,40 @@
-[gd_scene format=3 uid="uid://d1qnplbkct6dx"]
+[gd_scene format=3 uid="uid://c2t4m5hxik3l8"]
 
-[ext_resource type="Script" uid="uid://cjk1ret2d7huc" path="res://shop_ui.gd" id="1_lwavh"]
-[ext_resource type="Texture2D" uid="uid://csxoxmpqey2pe" path="res://Assets/Icons/Icon_03.png" id="2_du886"]
-[ext_resource type="Texture2D" uid="uid://cqcivgnhp8wfs" path="res://Assets/38_free_fantasy_icons/Weapons/one-handed_sword_03.png" id="5_06ldd"]
-[ext_resource type="Texture2D" uid="uid://bidtkihyg8adw" path="res://Assets/32_free_medieval_jewerly_icons/brooch_38.png" id="6_6iqus"]
-[ext_resource type="Texture2D" uid="uid://b7tshiaamjw8" path="res://Assets/38_free_fantasy_icons/Armor/heavy_shield_03.png" id="6_06ldd"]
-[ext_resource type="Texture2D" uid="uid://c2kupjd68imh3" path="res://Assets/32_free_medieval_jewerly_icons/ring_155.png" id="7_pyoh4"]
-[ext_resource type="Texture2D" uid="uid://djiixd6v0x87x" path="res://Assets/32_free_fantasy_skill_icons/demon_defense_03.png" id="10_pyoh4"]
-[ext_resource type="Texture2D" uid="uid://cptgahkqxyn76" path="res://Assets/Icons/Icon_06.png" id="11_8l6mh"]
-[ext_resource type="Texture2D" uid="uid://cc8ohdj0xup48" path="res://Assets/32_free_medieval_alchemy_icons/potion_01.png" id="11_62rop"]
-[ext_resource type="Texture2D" uid="uid://p15xfxs38jfu" path="res://Assets/32_free_fantasy_skill_icons/elf_combat_10.png" id="11_awwff"]
-[ext_resource type="Texture2D" uid="uid://yetwajc5ivju" path="res://Assets/Human Avatars/Avatars_01.png" id="11_lwavh"]
-[ext_resource type="Texture2D" uid="uid://b5hbnst0l27y2" path="res://Assets/32_free_fantasy_skill_icons/orc_magic_11.png" id="12_62rop"]
-[ext_resource type="Texture2D" uid="uid://cthnevkc83h7h" path="res://Assets/32_free_fantasy_skill_icons/arcane_combat_01.png" id="12_m5ysm"]
-[ext_resource type="Texture2D" uid="uid://bbdqw665yx2n8" path="res://Assets/32_free_medieval_jewerly_icons/amulet_03.png" id="15_62rop"]
-[ext_resource type="Texture2D" uid="uid://tbs5hpi85kaa" path="res://Assets/Icons/Icon_04.png" id="15_awwff"]
-[ext_resource type="Texture2D" uid="uid://c36uvftpdr6k1" path="res://Assets/Icons/Icon_05.png" id="17_lwavh"]
-[ext_resource type="Texture2D" uid="uid://bgfnub8oihpwv" path="res://Assets/Icons/Icon_11.png" id="19_ckwsy"]
-[ext_resource type="Texture2D" uid="uid://b7w2ey3hid1en" path="res://Assets/Icons/Icon_12.png" id="20_ckwsy"]
+[ext_resource type="Texture2D" uid="uid://c36uvftpdr6k1" path="res://Assets/Icons/Icon_05.png" id="1_103h8"]
+[ext_resource type="Texture2D" uid="uid://dbndu1aey07qi" path="res://Assets/Human Avatars/Avatars_05.png" id="1_n0dm2"]
+[ext_resource type="Texture2D" uid="uid://csxoxmpqey2pe" path="res://Assets/Icons/Icon_03.png" id="2_n0dm2"]
+[ext_resource type="Texture2D" uid="uid://cptgahkqxyn76" path="res://Assets/Icons/Icon_06.png" id="3_wsy1q"]
+[ext_resource type="Texture2D" uid="uid://tbs5hpi85kaa" path="res://Assets/Icons/Icon_04.png" id="4_ea0b8"]
+[ext_resource type="Texture2D" uid="uid://bbdqw665yx2n8" path="res://Assets/32_free_medieval_jewerly_icons/amulet_03.png" id="5_ch7nu"]
+[ext_resource type="Texture2D" uid="uid://cqcivgnhp8wfs" path="res://Assets/38_free_fantasy_icons/Weapons/one-handed_sword_03.png" id="6_vexoa"]
+[ext_resource type="Texture2D" uid="uid://b7tshiaamjw8" path="res://Assets/38_free_fantasy_icons/Armor/heavy_shield_03.png" id="7_jpeaq"]
+[ext_resource type="Texture2D" uid="uid://bidtkihyg8adw" path="res://Assets/32_free_medieval_jewerly_icons/brooch_38.png" id="8_7fxgq"]
+[ext_resource type="Texture2D" uid="uid://c2kupjd68imh3" path="res://Assets/32_free_medieval_jewerly_icons/ring_155.png" id="9_fi10i"]
+[ext_resource type="Texture2D" uid="uid://yetwajc5ivju" path="res://Assets/Human Avatars/Avatars_01.png" id="10_m4otr"]
+[ext_resource type="Texture2D" uid="uid://cthnevkc83h7h" path="res://Assets/32_free_fantasy_skill_icons/arcane_combat_01.png" id="11_k38he"]
+[ext_resource type="Texture2D" uid="uid://djiixd6v0x87x" path="res://Assets/32_free_fantasy_skill_icons/demon_defense_03.png" id="12_fbr11"]
+[ext_resource type="Texture2D" uid="uid://p15xfxs38jfu" path="res://Assets/32_free_fantasy_skill_icons/elf_combat_10.png" id="13_k84fh"]
+[ext_resource type="Texture2D" uid="uid://b5hbnst0l27y2" path="res://Assets/32_free_fantasy_skill_icons/orc_magic_11.png" id="14_14maj"]
+[ext_resource type="Texture2D" uid="uid://b8tct308qpsxw" path="res://Assets/Icons/Under.png" id="15_oduvr"]
+[ext_resource type="Texture2D" uid="uid://dcsc3b2umgcct" path="res://Assets/Icons/HP.png" id="16_l6rjo"]
+[ext_resource type="Texture2D" uid="uid://4cticrsxqihq" path="res://Assets/Icons/SP.png" id="17_o1o4d"]
+[ext_resource type="Texture2D" uid="uid://bspaopkl5trla" path="res://Assets/Icons/EXP.png" id="18_dmxca"]
+[ext_resource type="Texture2D" uid="uid://cc8ohdj0xup48" path="res://Assets/32_free_medieval_alchemy_icons/potion_01.png" id="19_ogwc4"]
+[ext_resource type="Texture2D" uid="uid://bgfnub8oihpwv" path="res://Assets/Icons/Icon_11.png" id="20_d8mba"]
+[ext_resource type="Texture2D" uid="uid://b7w2ey3hid1en" path="res://Assets/Icons/Icon_12.png" id="21_herwv"]
 
 [sub_resource type="Theme" id="Theme_6sibx"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_62rop"]
-bg_color = Color(0, 0, 1, 0.39215687)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_black"]
+bg_color = Color(0, 0, 0, 1)
 
-[node name="ShopUI" type="Control" unique_id=223660456]
+[node name="ShopSell" type="Control" unique_id=223660456]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_lwavh")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1034800679]
 layout_mode = 1
@@ -50,6 +53,49 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_6sibx")
 
+[node name="PanelContainer" type="PanelContainer" parent="HBoxContainer" unique_id=456618885]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_black")
+
+[node name="Margin" type="MarginContainer" parent="HBoxContainer/PanelContainer" unique_id=456618886]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/PanelContainer/Margin" unique_id=240244487]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer/PanelContainer/Margin/VBoxContainer" unique_id=271605401]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 32
+text = "A
+m
+a
+z
+o
+n"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/PanelContainer/Margin/VBoxContainer" unique_id=1052478995]
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource("1_n0dm2")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Buy" type="Button" parent="HBoxContainer/PanelContainer/Margin/VBoxContainer" unique_id=185005782]
+layout_mode = 2
+size_flags_vertical = 10
+theme_override_font_sizes/font_size = 32
+text = "0000"
+icon = ExtResource("2_n0dm2")
+
 [node name="Buy" type="PanelContainer" parent="HBoxContainer" unique_id=1500563678]
 layout_mode = 2
 size_flags_horizontal = 3
@@ -59,10 +105,9 @@ layout_mode = 2
 size_flags_stretch_ratio = 5.0
 theme_override_font_sizes/font_size = 24
 tab_alignment = 1
-current_tab = 1
+current_tab = 0
 
 [node name="Potion" type="ScrollContainer" parent="HBoxContainer/Buy/TabContainer" unique_id=711301761]
-visible = false
 layout_mode = 2
 metadata/_tab_index = 0
 
@@ -119,7 +164,7 @@ layout_mode = 2
 
 [node name="Item" type="TextureRect" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item1" unique_id=2081765219]
 layout_mode = 2
-texture = ExtResource("17_lwavh")
+texture = ExtResource("1_103h8")
 
 [node name="Hold" type="Label" parent="HBoxContainer/Buy/TabContainer/Potion/VBoxContainer/Item1" unique_id=742510914]
 layout_mode = 2
@@ -184,9 +229,10 @@ size_flags_horizontal = 0
 size_flags_vertical = 10
 theme_override_font_sizes/font_size = 24
 text = "9999"
-icon = ExtResource("2_du886")
+icon = ExtResource("2_n0dm2")
 
 [node name="Armor" type="ScrollContainer" parent="HBoxContainer/Buy/TabContainer" unique_id=179922739]
+visible = false
 layout_mode = 2
 metadata/_tab_index = 1
 
@@ -208,11 +254,11 @@ text = "Icon"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Hold" type="Label" parent="HBoxContainer/Buy/TabContainer/Armor/VBoxContainer/Title" unique_id=1068723041]
+[node name="Inventory" type="Label" parent="HBoxContainer/Buy/TabContainer/Armor/VBoxContainer/Title" unique_id=1068723041]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 32
-text = "Hold"
+text = "Inventory"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -243,7 +289,6 @@ vertical_alignment = 1
 [node name="Button1" type="Button" parent="HBoxContainer/Buy/TabContainer/Armor/VBoxContainer" unique_id=2130776596]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_styles/hover = SubResource("StyleBoxFlat_62rop")
 
 [node name="Item" type="HBoxContainer" parent="HBoxContainer/Buy/TabContainer/Armor/VBoxContainer/Button1" unique_id=1561325899]
 layout_mode = 1
@@ -259,13 +304,14 @@ grow_vertical = 2
 [node name="Item" type="TextureRect" parent="HBoxContainer/Buy/TabContainer/Armor/VBoxContainer/Button1/Item" unique_id=242726439]
 layout_mode = 2
 size_flags_horizontal = 3
-texture = ExtResource("17_lwavh")
+texture = ExtResource("1_103h8")
+stretch_mode = 5
 
 [node name="Hold" type="Label" parent="HBoxContainer/Buy/TabContainer/Armor/VBoxContainer/Button1/Item" unique_id=1425484064]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 24
-text = "99"
+text = "1"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -273,8 +319,7 @@ vertical_alignment = 1
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 24
-text = "HP+10
-SP+20"
+text = "ATK + 20"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -324,7 +369,6 @@ vertical_alignment = 1
 [node name="Button2" type="Button" parent="HBoxContainer/Buy/TabContainer/Armor/VBoxContainer" unique_id=792984613]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_styles/hover = SubResource("StyleBoxFlat_62rop")
 
 [node name="Item" type="HBoxContainer" parent="HBoxContainer/Buy/TabContainer/Armor/VBoxContainer/Button2" unique_id=719365386]
 layout_mode = 1
@@ -340,13 +384,14 @@ grow_vertical = 2
 [node name="Item" type="TextureRect" parent="HBoxContainer/Buy/TabContainer/Armor/VBoxContainer/Button2/Item" unique_id=549801671]
 layout_mode = 2
 size_flags_horizontal = 3
-texture = ExtResource("11_8l6mh")
+texture = ExtResource("3_wsy1q")
+stretch_mode = 5
 
 [node name="Hold" type="Label" parent="HBoxContainer/Buy/TabContainer/Armor/VBoxContainer/Button2/Item" unique_id=392312889]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 24
-text = "99"
+text = "1"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -354,8 +399,7 @@ vertical_alignment = 1
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 24
-text = "HP+10
-SP+20"
+text = "DEF - 10"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -405,7 +449,6 @@ vertical_alignment = 1
 [node name="Button3" type="Button" parent="HBoxContainer/Buy/TabContainer/Armor/VBoxContainer" unique_id=153666526]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_styles/hover = SubResource("StyleBoxFlat_62rop")
 
 [node name="Item" type="HBoxContainer" parent="HBoxContainer/Buy/TabContainer/Armor/VBoxContainer/Button3" unique_id=1235872069]
 layout_mode = 1
@@ -421,13 +464,14 @@ grow_vertical = 2
 [node name="Item" type="TextureRect" parent="HBoxContainer/Buy/TabContainer/Armor/VBoxContainer/Button3/Item" unique_id=117201057]
 layout_mode = 2
 size_flags_horizontal = 3
-texture = ExtResource("15_awwff")
+texture = ExtResource("4_ea0b8")
+stretch_mode = 5
 
 [node name="Hold" type="Label" parent="HBoxContainer/Buy/TabContainer/Armor/VBoxContainer/Button3/Item" unique_id=359108908]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 24
-text = "99"
+text = "10"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -435,8 +479,7 @@ vertical_alignment = 1
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 24
-text = "HP+10
-SP+20"
+text = "MAXHP + 50"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -482,14 +525,6 @@ theme_override_font_sizes/font_size = 24
 text = "50"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="Buy" type="Button" parent="HBoxContainer/Buy/TabContainer/Armor/VBoxContainer" unique_id=1626623669]
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 10
-theme_override_font_sizes/font_size = 24
-text = "0"
-icon = ExtResource("2_du886")
 
 [node name="Weapon" type="ScrollContainer" parent="HBoxContainer/Buy/TabContainer" unique_id=221738775]
 visible = false
@@ -552,7 +587,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.0
 text = "100"
-icon = ExtResource("15_62rop")
+icon = ExtResource("5_ch7nu")
 
 [node name="-" type="Button" parent="HBoxContainer/Buy/TabContainer/Weapon/VBoxContainer/Item1/Button" unique_id=1656126422]
 layout_mode = 1
@@ -625,35 +660,6 @@ vertical_alignment = 1
 layout_mode = 2
 alignment = 1
 
-[node name="Equip" type="GridContainer" parent="HBoxContainer/Player/PlayerInformation/Equipment&&Skill" unique_id=2127222164]
-layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 4
-
-[node name="Weapon" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Equipment&&Skill/Equip" unique_id=1775188326]
-layout_mode = 2
-texture = ExtResource("19_ckwsy")
-
-[node name="Weapon2" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Equipment&&Skill/Equip" unique_id=398602834]
-layout_mode = 2
-texture = ExtResource("19_ckwsy")
-
-[node name="Weapon3" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Equipment&&Skill/Equip" unique_id=724929163]
-layout_mode = 2
-texture = ExtResource("19_ckwsy")
-
-[node name="Weapon4" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Equipment&&Skill/Equip" unique_id=757202799]
-layout_mode = 2
-texture = ExtResource("19_ckwsy")
-
-[node name="Weapon5" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Equipment&&Skill/Equip" unique_id=564515340]
-layout_mode = 2
-texture = ExtResource("19_ckwsy")
-
-[node name="Weapon6" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Equipment&&Skill/Equip" unique_id=116924039]
-layout_mode = 2
-texture = ExtResource("19_ckwsy")
-
 [node name="Equip2" type="GridContainer" parent="HBoxContainer/Player/PlayerInformation/Equipment&&Skill" unique_id=1732400795]
 layout_mode = 2
 size_flags_horizontal = 6
@@ -661,26 +667,26 @@ size_flags_vertical = 4
 
 [node name="Weapon" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Equipment&&Skill/Equip2" unique_id=1495675440]
 layout_mode = 2
-texture = ExtResource("5_06ldd")
+texture = ExtResource("6_vexoa")
 
 [node name="Armor" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Equipment&&Skill/Equip2" unique_id=988988039]
 layout_mode = 2
-texture = ExtResource("6_06ldd")
+texture = ExtResource("7_jpeaq")
 
 [node name="Jewerly01" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Equipment&&Skill/Equip2" unique_id=702599979]
 layout_mode = 2
-texture = ExtResource("6_6iqus")
+texture = ExtResource("8_7fxgq")
 
 [node name="Jewerly02" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Equipment&&Skill/Equip2" unique_id=1722251878]
 layout_mode = 2
-texture = ExtResource("7_pyoh4")
+texture = ExtResource("9_fi10i")
 
 [node name="PlayerPhoto" type="VBoxContainer" parent="HBoxContainer/Player/PlayerInformation/Equipment&&Skill" unique_id=1061771014]
 layout_mode = 2
 
 [node name="Warrior" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Equipment&&Skill/PlayerPhoto" unique_id=1000013860]
 layout_mode = 2
-texture = ExtResource("11_lwavh")
+texture = ExtResource("10_m4otr")
 stretch_mode = 5
 
 [node name="TotalCoin" type="Label" parent="HBoxContainer/Player/PlayerInformation/Equipment&&Skill/PlayerPhoto" unique_id=215825280]
@@ -697,65 +703,79 @@ size_flags_vertical = 4
 
 [node name="Skill01" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Equipment&&Skill/Skill" unique_id=1125211141]
 layout_mode = 2
-texture = ExtResource("12_m5ysm")
+texture = ExtResource("11_k38he")
 
 [node name="Skill02" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Equipment&&Skill/Skill" unique_id=470356634]
 layout_mode = 2
-texture = ExtResource("10_pyoh4")
+texture = ExtResource("12_fbr11")
 
 [node name="Skill03" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Equipment&&Skill/Skill" unique_id=1877888234]
 layout_mode = 2
-texture = ExtResource("11_awwff")
+texture = ExtResource("13_k84fh")
 
 [node name="Skill04" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Equipment&&Skill/Skill" unique_id=1517602215]
 layout_mode = 2
-texture = ExtResource("12_62rop")
-
-[node name="Skill2" type="GridContainer" parent="HBoxContainer/Player/PlayerInformation/Equipment&&Skill" unique_id=853236578]
-layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 4
-
-[node name="Skill01" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Equipment&&Skill/Skill2" unique_id=1679365428]
-layout_mode = 2
-texture = ExtResource("19_ckwsy")
-
-[node name="Skill02" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Equipment&&Skill/Skill2" unique_id=1056153769]
-layout_mode = 2
-texture = ExtResource("19_ckwsy")
-
-[node name="Skill03" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Equipment&&Skill/Skill2" unique_id=1795293561]
-layout_mode = 2
-texture = ExtResource("19_ckwsy")
-
-[node name="Skill04" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Equipment&&Skill/Skill2" unique_id=1428688859]
-layout_mode = 2
-texture = ExtResource("19_ckwsy")
-
-[node name="Skill05" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Equipment&&Skill/Skill2" unique_id=84856100]
-layout_mode = 2
-texture = ExtResource("19_ckwsy")
-
-[node name="Skill06" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Equipment&&Skill/Skill2" unique_id=554303168]
-layout_mode = 2
-texture = ExtResource("19_ckwsy")
+texture = ExtResource("14_14maj")
 
 [node name="HSeparator1" type="HSeparator" parent="HBoxContainer/Player/PlayerInformation" unique_id=1500025227]
 layout_mode = 2
 
-[node name="‌Potion" type="HBoxContainer" parent="HBoxContainer/Player/PlayerInformation" unique_id=838309422]
+[node name="Bar" type="HBoxContainer" parent="HBoxContainer/Player/PlayerInformation" unique_id=838309422]
+layout_mode = 2
+alignment = 1
+
+[node name="HPBAR" type="TextureProgressBar" parent="HBoxContainer/Player/PlayerInformation/Bar" unique_id=482966035]
+layout_mode = 2
+size_flags_horizontal = 3
+value = 80.0
+nine_patch_stretch = true
+texture_under = ExtResource("15_oduvr")
+texture_progress = ExtResource("16_l6rjo")
+
+[node name="Label" type="Label" parent="HBoxContainer/Player/PlayerInformation/Bar" unique_id=1410348445]
+layout_mode = 2
+text = "80/100"
+
+[node name="SPBAR" type="TextureProgressBar" parent="HBoxContainer/Player/PlayerInformation/Bar" unique_id=494335313]
+layout_mode = 2
+size_flags_horizontal = 3
+value = 80.0
+nine_patch_stretch = true
+texture_under = ExtResource("15_oduvr")
+texture_progress = ExtResource("17_o1o4d")
+
+[node name="Label2" type="Label" parent="HBoxContainer/Player/PlayerInformation/Bar" unique_id=1689296890]
+layout_mode = 2
+text = "80/100"
+
+[node name="EXPBAR" type="TextureProgressBar" parent="HBoxContainer/Player/PlayerInformation/Bar" unique_id=1442610029]
+layout_mode = 2
+size_flags_horizontal = 3
+value = 80.0
+nine_patch_stretch = true
+texture_under = ExtResource("15_oduvr")
+texture_progress = ExtResource("18_dmxca")
+
+[node name="Label3" type="Label" parent="HBoxContainer/Player/PlayerInformation/Bar" unique_id=1030880044]
+layout_mode = 2
+text = "80/100"
+
+[node name="HSeparator2" type="HSeparator" parent="HBoxContainer/Player/PlayerInformation" unique_id=1082711066]
+layout_mode = 2
+
+[node name="‌Potion" type="HBoxContainer" parent="HBoxContainer/Player/PlayerInformation" unique_id=2074775881]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 alignment = 1
 
-[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/‌Potion" unique_id=452174432]
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/‌Potion" unique_id=779856252]
 layout_mode = 2
 size_flags_horizontal = 3
-texture = ExtResource("11_62rop")
+texture = ExtResource("19_ogwc4")
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="HBoxContainer/Player/PlayerInformation/‌Potion/TextureRect" unique_id=1402513580]
+[node name="Label" type="Label" parent="HBoxContainer/Player/PlayerInformation/‌Potion/TextureRect" unique_id=537242312]
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
@@ -768,13 +788,13 @@ grow_horizontal = 0
 grow_vertical = 0
 text = "99"
 
-[node name="TextureRect2" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/‌Potion" unique_id=1246994671]
+[node name="TextureRect2" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/‌Potion" unique_id=2066439767]
 layout_mode = 2
 size_flags_horizontal = 3
-texture = ExtResource("11_62rop")
+texture = ExtResource("19_ogwc4")
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="HBoxContainer/Player/PlayerInformation/‌Potion/TextureRect2" unique_id=971542724]
+[node name="Label" type="Label" parent="HBoxContainer/Player/PlayerInformation/‌Potion/TextureRect2" unique_id=1032470315]
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
@@ -787,13 +807,13 @@ grow_horizontal = 0
 grow_vertical = 0
 text = "99"
 
-[node name="TextureRect3" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/‌Potion" unique_id=167517228]
+[node name="TextureRect3" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/‌Potion" unique_id=95008118]
 layout_mode = 2
 size_flags_horizontal = 3
-texture = ExtResource("11_62rop")
+texture = ExtResource("19_ogwc4")
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="HBoxContainer/Player/PlayerInformation/‌Potion/TextureRect3" unique_id=1699293717]
+[node name="Label" type="Label" parent="HBoxContainer/Player/PlayerInformation/‌Potion/TextureRect3" unique_id=2138997773]
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
@@ -806,13 +826,13 @@ grow_horizontal = 0
 grow_vertical = 0
 text = "99"
 
-[node name="TextureRect4" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/‌Potion" unique_id=156711740]
+[node name="TextureRect4" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/‌Potion" unique_id=474176470]
 layout_mode = 2
 size_flags_horizontal = 3
-texture = ExtResource("11_62rop")
+texture = ExtResource("19_ogwc4")
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="HBoxContainer/Player/PlayerInformation/‌Potion/TextureRect4" unique_id=1571925036]
+[node name="Label" type="Label" parent="HBoxContainer/Player/PlayerInformation/‌Potion/TextureRect4" unique_id=33520084]
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
@@ -825,13 +845,13 @@ grow_horizontal = 0
 grow_vertical = 0
 text = "99"
 
-[node name="TextureRect5" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/‌Potion" unique_id=1005562239]
+[node name="TextureRect5" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/‌Potion" unique_id=1948950633]
 layout_mode = 2
 size_flags_horizontal = 3
-texture = ExtResource("11_62rop")
+texture = ExtResource("19_ogwc4")
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="HBoxContainer/Player/PlayerInformation/‌Potion/TextureRect5" unique_id=659465870]
+[node name="Label" type="Label" parent="HBoxContainer/Player/PlayerInformation/‌Potion/TextureRect5" unique_id=297929736]
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
@@ -844,13 +864,13 @@ grow_horizontal = 0
 grow_vertical = 0
 text = "99"
 
-[node name="TextureRect6" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/‌Potion" unique_id=1935422344]
+[node name="TextureRect6" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/‌Potion" unique_id=1950738203]
 layout_mode = 2
 size_flags_horizontal = 3
-texture = ExtResource("11_62rop")
+texture = ExtResource("19_ogwc4")
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="HBoxContainer/Player/PlayerInformation/‌Potion/TextureRect6" unique_id=1578737230]
+[node name="Label" type="Label" parent="HBoxContainer/Player/PlayerInformation/‌Potion/TextureRect6" unique_id=2145915268]
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
@@ -877,25 +897,24 @@ alignment = 1
 
 [node name="ParaIcon" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Parameters/HP" unique_id=1078401184]
 layout_mode = 2
-texture = ExtResource("15_awwff")
+texture = ExtResource("4_ea0b8")
 stretch_mode = 5
 
 [node name="ParaName" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/HP" unique_id=1192817113]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
-text = "MAXHP:"
+text = "MAXHP"
 
 [node name="CurrentValue" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/HP" unique_id=1588518529]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
-text = "999"
+text = "100"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="ChangeValue" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/HP" unique_id=1717303409]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
-text = "+/- 99"
 
 [node name="SP" type="HBoxContainer" parent="HBoxContainer/Player/PlayerInformation/Parameters" unique_id=1850924360]
 layout_mode = 2
@@ -904,25 +923,24 @@ alignment = 1
 
 [node name="ParaIcon" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Parameters/SP" unique_id=453887867]
 layout_mode = 2
-texture = ExtResource("19_ckwsy")
+texture = ExtResource("20_d8mba")
 stretch_mode = 5
 
 [node name="ParaName" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/SP" unique_id=792150584]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
-text = "MAXHP:"
+text = "MAXSP"
 
 [node name="CurrentValue" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/SP" unique_id=63365697]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
-text = "999"
+text = "100"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="ChangeValue" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/SP" unique_id=144506864]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
-text = "+/- 99"
 
 [node name="ATK" type="HBoxContainer" parent="HBoxContainer/Player/PlayerInformation/Parameters" unique_id=491128258]
 layout_mode = 2
@@ -931,25 +949,24 @@ alignment = 1
 
 [node name="ParaIcon" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Parameters/ATK" unique_id=1184483628]
 layout_mode = 2
-texture = ExtResource("17_lwavh")
+texture = ExtResource("1_103h8")
 stretch_mode = 5
 
 [node name="ParaName" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/ATK" unique_id=2077712531]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
-text = "MAXHP:"
+text = "ATK"
 
 [node name="CurrentValue" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/ATK" unique_id=701783329]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
-text = "999"
+text = "10"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="ChangeValue" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/ATK" unique_id=564196853]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
-text = "+/- 99"
 
 [node name="DEF" type="HBoxContainer" parent="HBoxContainer/Player/PlayerInformation/Parameters" unique_id=412500065]
 layout_mode = 2
@@ -958,18 +975,18 @@ alignment = 1
 
 [node name="ParaIcon" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Parameters/DEF" unique_id=1041025800]
 layout_mode = 2
-texture = ExtResource("11_8l6mh")
+texture = ExtResource("3_wsy1q")
 stretch_mode = 5
 
 [node name="ParaName" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/DEF" unique_id=1643872127]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
-text = "MAXHP:"
+text = "DEF"
 
 [node name="CurrentValue" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/DEF" unique_id=740916533]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
-text = "999"
+text = "10"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -985,17 +1002,17 @@ alignment = 1
 
 [node name="ParaIcon" type="TextureRect" parent="HBoxContainer/Player/PlayerInformation/Parameters/SPEED" unique_id=237265621]
 layout_mode = 2
-texture = ExtResource("20_ckwsy")
+texture = ExtResource("21_herwv")
 
 [node name="ParaName" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/SPEED" unique_id=1629303375]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
-text = "MAXHP:"
+text = "SPEED"
 
 [node name="CurrentValue" type="Label" parent="HBoxContainer/Player/PlayerInformation/Parameters/SPEED" unique_id=1617048521]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
-text = "999"
+text = "10"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -1003,13 +1020,3 @@ vertical_alignment = 1
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
 text = "+/- 99"
-
-[node name="Sale" type="PanelContainer" parent="HBoxContainer" unique_id=2083151647]
-visible = false
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="TabContainer" type="TabContainer" parent="HBoxContainer/Sale" unique_id=1159887431]
-layout_mode = 2
-size_flags_stretch_ratio = 5.0
-tab_alignment = 1

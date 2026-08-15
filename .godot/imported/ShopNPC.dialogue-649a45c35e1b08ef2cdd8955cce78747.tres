@@ -24,21 +24,58 @@ lines = {
 &"type": "dialogue"
 },
 "10": {
-&"character": "Nathan",
 &"id": "10",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "show_save_load",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
 &"next_id": "11",
+&"type": "mutation"
+},
+"11": {
+&"character": "Nathan",
+&"id": "11",
+&"next_id": "14",
+&"text": "You picked the second one.",
+&"type": "dialogue"
+},
+"12": {
+&"id": "12",
+&"next_id": "end",
+&"text": "EXIT",
+&"type": "response"
+},
+"13": {
+&"character": "Nathan",
+&"id": "13",
+&"next_id": "14",
+&"text": "Bye.",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Nathan",
+&"id": "14",
+&"next_id": "15",
 &"text": "For more information see the online documentation.",
 &"type": "dialogue"
 },
-"11": {
-&"id": "11",
+"15": {
+&"id": "15",
 &"is_snippet": false,
 &"next_id": "end",
 &"next_id_after": "",
 &"type": "goto"
 },
-"12": {
-&"id": "12",
+"16": {
+&"id": "16",
 &"is_snippet": false,
 &"next_id": "end",
 &"next_id_after": "",
@@ -54,7 +91,7 @@ lines = {
 "3": {
 &"id": "3",
 &"next_id": "4",
-&"responses": PackedStringArray("3", "6", "8"),
+&"responses": PackedStringArray("3", "6", "9", "12"),
 &"text": "BUY",
 &"type": "response"
 },
@@ -62,11 +99,11 @@ lines = {
 &"id": "4",
 &"mutation": {
 &"expression": Array[Dictionary]([{
-&"function": "show_shop_ui",
+&"function": "show_shop_buy",
 &"i": 3,
 &"type": &"function",
 &"value": Array[Array]([Array[Dictionary]([{
-&"i": 16,
+&"i": 17,
 &"type": &"parens_close"
 }])])
 }]),
@@ -78,7 +115,7 @@ lines = {
 "5": {
 &"character": "Nathan",
 &"id": "5",
-&"next_id": "10",
+&"next_id": "14",
 &"text": "Welcome to the shop!",
 &"type": "dialogue"
 },
@@ -89,33 +126,47 @@ lines = {
 &"type": "response"
 },
 "7": {
-&"character": "Nathan",
 &"id": "7",
-&"next_id": "10",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "show_shop_sell",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "8",
+&"type": "mutation"
+},
+"8": {
+&"character": "Nathan",
+&"id": "8",
+&"next_id": "14",
 &"text": "You picked the second one.",
 &"type": "dialogue"
 },
-"8": {
-&"id": "8",
-&"next_id": "end",
-&"text": "EXIT",
-&"type": "response"
-},
 "9": {
-&"character": "Nathan",
 &"id": "9",
 &"next_id": "10",
-&"text": "Bye.",
-&"type": "dialogue"
+&"text": "Save",
+&"type": "response"
 }
 }
 raw_text = "~ start
 Nathan: [[Hi|Hello|Howdy]], this is some dialogue.
 Nathan: Here are some choices.
 - BUY
-	do show_shop_ui()
+	do show_shop_buy()
 	Nathan: Welcome to the shop!
 - SELL
+	do show_shop_sell()
+	Nathan: You picked the second one.
+- Save
+	do show_save_load()
 	Nathan: You picked the second one.
 - EXIT => END
 	Nathan: Bye.

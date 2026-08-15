@@ -1,1 +1,4 @@
-res://shop_ui.tscn
+res://shop_buy.tscn
+res://shop_buy.gd
+res://status.gd
+res://status.tscn

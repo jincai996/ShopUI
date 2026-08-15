@@ -2,9 +2,13 @@
 Nathan: [[Hi|Hello|Howdy]], this is some dialogue.
 Nathan: Here are some choices.
 - BUY
-	do show_shop_ui()
+	do show_shop_buy()
 	Nathan: Welcome to the shop!
 - SELL
+	do show_shop_sell()
+	Nathan: You picked the second one.
+- Save
+	do show_save_load()
 	Nathan: You picked the second one.
 - EXIT => END
 	Nathan: Bye.
