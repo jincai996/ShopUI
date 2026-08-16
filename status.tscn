@@ -441,12 +441,21 @@ visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 
+[node name="Label" type="Label" parent="HBoxContainer/Package" unique_id=1475049226]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 64
+text = "请选择要装备的物品"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="TabContainer" type="TabContainer" parent="HBoxContainer/Package" unique_id=1889188554]
 layout_mode = 2
 size_flags_stretch_ratio = 5.0
 theme_override_font_sizes/font_size = 24
 tab_alignment = 1
 current_tab = 0
+tabs_visible = false
 
 [node name="Weapon" type="ScrollContainer" parent="HBoxContainer/Package/TabContainer" unique_id=179922739]
 layout_mode = 2

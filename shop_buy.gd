@@ -158,6 +158,10 @@ func _reset_parameter_change() -> void:
 			change_label.remove_theme_color_override("font_color")
 
 
+func _on_exit_pressed() -> void:
+	get_tree().change_scene_to_file("res://main.tscn")
+
+
 func _on_armor_buy_pressed() -> void:
 	if _armor_total <= 0 or _armor_total > _coins:
 		return

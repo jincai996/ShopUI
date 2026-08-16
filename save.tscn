@@ -1,0 +1,94 @@
+[gd_scene format=3 uid="uid://knovfccdv4gl"]
+
+[ext_resource type="Script" path="res://save.gd" id="1_save"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_black"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_blue"]
+bg_color = Color(0, 0, 1, 0.39215687)
+
+[node name="Save" type="Control" unique_id=1091228146]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_save")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1091228147]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1091228148]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="CenterContainer" unique_id=1091228149]
+custom_minimum_size = Vector2(900, 700)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_black")
+
+[node name="MarginContainer" type="MarginContainer" parent="CenterContainer/PanelContainer" unique_id=1091228150]
+layout_mode = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer" unique_id=1091228151]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="Title" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer" unique_id=1091228152]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 48
+text = "SAVE GAME"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Slot1" type="Button" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer" unique_id=1091228153]
+custom_minimum_size = Vector2(0, 110)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 32
+theme_override_styles/hover = SubResource("StyleBoxFlat_blue")
+text = "Empty Slot 1"
+expand_icon = true
+icon_max_width = 80
+
+[node name="Slot2" type="Button" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer" unique_id=1091228154]
+custom_minimum_size = Vector2(0, 110)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 32
+theme_override_styles/hover = SubResource("StyleBoxFlat_blue")
+text = "Empty Slot 2"
+expand_icon = true
+icon_max_width = 80
+
+[node name="Slot3" type="Button" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer" unique_id=1091228155]
+custom_minimum_size = Vector2(0, 110)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 32
+theme_override_styles/hover = SubResource("StyleBoxFlat_blue")
+text = "Empty Slot 3"
+expand_icon = true
+icon_max_width = 80
+
+[node name="Exit" type="Button" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer" unique_id=1091228156]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Exit"

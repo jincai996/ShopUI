@@ -137,6 +137,14 @@ func _on_package_gui_input(event: InputEvent) -> void:
 
 
 func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("MENU"):
+		get_viewport().set_input_as_handled()
+		get_tree().paused = false
+		if get_parent() == get_tree().root:
+			get_tree().change_scene_to_file("res://main.tscn")
+		else:
+			queue_free()
+		return
 	if not _package.visible:
 		return
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_RIGHT:

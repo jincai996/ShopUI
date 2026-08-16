@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://c36uvftpdr6k1" path="res://Assets/Icons/Icon_05.png" id="2_payx8"]
 [ext_resource type="Texture2D" uid="uid://csxoxmpqey2pe" path="res://Assets/Icons/Icon_03.png" id="3_6x0rl"]
 [ext_resource type="Texture2D" uid="uid://cptgahkqxyn76" path="res://Assets/Icons/Icon_06.png" id="4_eq4b8"]
+[ext_resource type="Texture2D" uid="uid://c71qv8lrl5hk7" path="res://Assets/Icons/Icon_09.png" id="4_hwiad"]
 [ext_resource type="Texture2D" uid="uid://tbs5hpi85kaa" path="res://Assets/Icons/Icon_04.png" id="5_1fhna"]
 [ext_resource type="Texture2D" uid="uid://bgfnub8oihpwv" path="res://Assets/Icons/Icon_11.png" id="7_hrdcw"]
 [ext_resource type="Texture2D" uid="uid://cqcivgnhp8wfs" path="res://Assets/38_free_fantasy_icons/Weapons/one-handed_sword_03.png" id="8_3n0dl"]
@@ -73,7 +74,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 6
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 48
 text = "A
 m
 a
@@ -92,10 +93,17 @@ stretch_mode = 5
 
 [node name="Buy" type="Button" parent="HBoxContainer/PanelContainer/Margin/VBoxContainer" unique_id=185005782]
 layout_mode = 2
-size_flags_vertical = 10
+size_flags_vertical = 8
 theme_override_font_sizes/font_size = 32
 text = "Buy"
 icon = ExtResource("3_6x0rl")
+
+[node name="Exit" type="Button" parent="HBoxContainer/PanelContainer/Margin/VBoxContainer" unique_id=1378057484]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 32
+text = "Exit"
+icon = ExtResource("4_hwiad")
 
 [node name="Buy" type="PanelContainer" parent="HBoxContainer" unique_id=1500563678]
 layout_mode = 2
@@ -894,3 +902,5 @@ vertical_alignment = 1
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
 text = "+/- 99"
+
+[connection signal="pressed" from="HBoxContainer/PanelContainer/Margin/VBoxContainer/Exit" to="." method="_on_exit_pressed"]

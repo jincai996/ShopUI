@@ -1,8 +1,8 @@
+Label
 TextureRect
 TextEdit
 Button
 VBoxContainer
-Label
 MarginContainer
 TextureProgressBar
 ProgressBar

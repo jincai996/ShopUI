@@ -1,4 +1,2 @@
-res://shop_buy.tscn
-res://shop_buy.gd
+res://npc.gd
 res://status.gd
-res://status.tscn
